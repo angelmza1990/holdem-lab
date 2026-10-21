@@ -1,4 +1,4 @@
-// node --test tests/        (FULL=1 also enumerates all 133,784,560 seven-card hands, ~1 minute)
+// node --test tests/*.test.js        (FULL=1 also enumerates all 133,784,560 seven-card hands, ~1 minute)
 const test = require("node:test");
 const assert = require("node:assert/strict");
 const P = require("../assets/engine.js");

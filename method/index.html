@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Method · Hold'em Lab</title>
+  <meta name="description" content="How Hold'em Lab evaluates hands, computes equity, and where its preflop ranges come from.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/theme.css">
+  <style>
+    .prose h2 { color: var(--ink); margin: 32px 0 8px; }
+    .prose ul { margin: 0 0 12px; padding-left: 20px; }
+    .prose li { margin: 4px 0; }
+    .prose code { font-size: 13px; background: var(--hover); padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Hold'em Lab</p>
+        <h1>Method</h1>
+        <p class="lede">How the numbers are computed, how they are checked, and what they do not capture.</p>
+      </header>
+      <section class="block">
+        <div class="prose">
+          <h2>Hand evaluation</h2>
+          <p>Each hand of five to seven cards gets one integer score: the hand category (high card up to straight flush) followed by the ranks that break ties. A higher score wins; equal scores split the pot. Flushes and straights are found with 13-bit rank masks and lookup tables, which lets the evaluator score about 13 million seven-card hands per second in JavaScript.</p>
+          <p>The test suite checks it three ways:</p>
+          <ul>
+            <li>all 2,598,960 five-card hands produce the known frequency of every category;</li>
+            <li>all 133,784,560 seven-card hands do too (23,294,460 high card … 41,584 straight flushes);</li>
+            <li>on 200,000 random pairs of seven-card hands, it orders them exactly like an independent, deliberately simple evaluator that tries all 21 five-card subsets.</li>
+          </ul>
+
+          <h2>Equity</h2>
+          <p>Equity is each player's average share of the pot over all ways the remaining cards can fall, with ties split. When the number of possible deals (hand combinations times boards) is under about 2.5 million, every deal is enumerated and the result is exact. Otherwise the calculator deals random hands from each range and random boards, rejecting deals where two players would hold the same card, and reports the margin of error at 95% confidence (about ±0.2 points after 200,000 deals).</p>
+          <p>Ranges use the usual notation: <code>QQ+</code>, <code>22-55</code>, <code>ATs+</code>, <code>A5s-A2s</code>, <code>AK</code> (suited and offsuit), <code>KQo</code>, exact cards such as <code>AhKh</code>, and <code>random</code>. A <code>:0.5</code> suffix gives a hand half weight, for hands played part of the time.</p>
+
+          <h2>Preflop ranges</h2>
+          <p>The ranges are <strong>baseline conventions</strong> for 6-max cash games with 100 big blinds, 2.5bb opens and 3bb from the small blind. They are close to widely published starting charts, but they are not the output of a solver: real equilibrium strategies mix many more hands and change with stack depth, rake, sizing and the players. Treat them as a starting point to edit.</p>
+          <p>The strength view uses each hand's equity against one, two and five random hands, simulated with 100,000 to 400,000 deals per hand and a fixed seed so the file is reproducible. The classic matchups on the overview are exact, averaged over every suit combination.</p>
+
+          <h2>Pot odds and bet sizing</h2>
+          <ul>
+            <li>Equity needed to call a bet <em>B</em> into a pot <em>P</em>: <code>B / (P + 2B)</code>.</li>
+            <li>Largest callable bet with equity <em>e</em>: <code>e × P / (1 − 2e)</code>, any size when <em>e</em> ≥ 50%.</li>
+            <li>Implied odds needed: <code>(1 − e) × B / e − (P + B)</code>.</li>
+            <li>Chance of hitting <em>k</em> outs with <em>n</em> cards to come from <em>u</em> unseen: <code>1 − C(u − k, n) / C(u, n)</code>.</li>
+            <li>Minimum defence against a bet of <em>s</em> times the pot: <code>1 / (1 + s)</code>; bluff break-even: <code>s / (1 + s)</code>; balanced river bluffs: <code>s / (1 + 2s)</code>.</li>
+            <li>Geometric bet fraction over <em>n</em> streets with stack <em>S</em>: <code>((1 + 2S / P)^(1/n) − 1) / 2</code>.</li>
+          </ul>
+          <p>All of these treat one decision at a time. They do not model how much equity a hand actually realizes with more betting to come, which depends on position and on how both players play later streets.</p>
+
+          <h2>Reproduce it</h2>
+          <p>The code is on <a href="https://github.com/angelmza1990/holdem-lab">GitHub</a>. <code>node --test tests/*.test.js</code> runs the checks (<code>FULL=1</code> adds the seven-card enumeration), and the scripts in <code>scripts/</code> rebuild the precomputed tables.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="../assets/engine.js"></script>
+  <script src="../assets/ui.js"></script>
+  <script>UI.shell("method");</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-root=".">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hold'em Lab</title>
+  <meta name="description" content="Texas Hold'em tools: preflop ranges, an equity calculator for hands and ranges, a pot odds calculator and bet sizing, all computed in the browser.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Texas Hold'em</p>
+        <h1>Hold'em Lab</h1>
+        <p class="lede">Tools for the math of No-Limit Hold'em: which hands to play before the flop, how often a hand or a range wins, whether a bet is worth calling, and how much to bet. Everything is computed in your browser.</p>
+      </header>
+
+      <section class="block">
+        <div class="links-grid">
+          <a class="link-card" href="ranges/"><strong>Preflop ranges</strong><span>Opening, 3-bet and calling ranges by position on the 13×13 grid, hand strength against random hands, and an editor to paint your own.</span></a>
+          <a class="link-card" href="equity/"><strong>Equity calculator</strong><span>Hands or ranges for up to six players on any board, by exact enumeration or simulation.</span></a>
+          <a class="link-card" href="pot-odds/"><strong>Pot odds</strong><span>Whether to call: the equity you need, the largest bet you can call with your outs or your hand, and the implied odds that would make up the difference.</span></a>
+          <a class="link-card" href="bet-sizing/"><strong>Bet sizing</strong><span>Minimum defence, bluff break-even and value-to-bluff ratios by size, the most profitable size for a read, and geometric sizing to get all in.</span></a>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Numbers worth knowing</h2>
+        <div class="tiles">
+          <div class="tile"><p class="label">Calling a half-pot bet</p><div class="value">25%</div><div class="delta"><span>equity needed</span></div></div>
+          <div class="tile"><p class="label">Calling a pot-size bet</p><div class="value">33.3%</div><div class="delta"><span>equity needed</span></div></div>
+          <div class="tile"><p class="label">Flush draw on the flop</p><div class="value">35.0%</div><div class="delta"><span>by the river; 19.1% on the turn</span></div></div>
+          <div class="tile"><p class="label">Open-ended straight draw</p><div class="value">31.5%</div><div class="delta"><span>by the river; 17.0% on the turn</span></div></div>
+          <div class="tile"><p class="label">Pocket pair flops a set</p><div class="value">11.8%</div><div class="delta"><span>or better, about 1 in 8.5</span></div></div>
+          <div class="tile"><p class="label">Defending a pot-size bet</p><div class="value">50%</div><div class="delta"><span>minimum share of your range</span></div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Classic preflop matchups</h2>
+        <p class="sub">All-in before the flop, averaged over every combination of suits.</p>
+        <div class="card table-scroll"><table class="data" id="matchups"></table></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/engine.js"></script>
+  <script src="assets/ui.js"></script>
+  <script>
+    UI.shell("home");
+    fetch("data/matchups.json").then((r) => r.json()).then((rows) => {
+      document.getElementById("matchups").innerHTML = `<thead><tr><th>Hand</th><th>Against</th><th>Equity</th><th></th><th>Against's equity</th><th style="text-align:left">Situation</th></tr></thead><tbody>` +
+        rows.map((m) => `<tr>
+          <td><a href="equity/?p1=${encodeURIComponent(m.a)}&p2=${encodeURIComponent(m.b)}">${UI.esc(m.a)}</a></td>
+          <td>${m.b === "random" ? "Any two cards" : UI.esc(m.b)}</td>
+          <td><strong>${UI.pct(m.equity[0])}</strong></td>
+          <td style="width:140px"><div class="meter"><i style="width:${m.equity[0] * 100}%"></i></div></td>
+          <td>${UI.pct(m.equity[1])}</td>
+          <td style="text-align:left" class="muted">${UI.esc(m.note)}${m.exact ? "" : " (simulated)"}</td></tr>`).join("") + "</tbody>";
+    });
+  </script>
+</body>
+</html>
