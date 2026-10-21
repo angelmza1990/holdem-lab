@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bet Sizing · Hold'em Lab</title>
+  <meta name="description" content="Bet sizing for Texas Hold'em: minimum defence frequency, bluff break-even, value-to-bluff ratios, the expected value of each size and geometric sizing to get all in.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/theme.css">
+  <style>
+    table.data input[type="number"] { width: 72px; font: 500 13px var(--sans); padding: 4px 6px; border: 1px solid var(--line-2); border-radius: 6px; background: var(--surface); color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; }
+    tr.best td { background: var(--pos-1); }
+    .bar-cell { width: 140px; }
+    .bar-cell span { display: inline-block; height: 8px; border-radius: 2px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Hold'em Lab</p>
+        <h1>Bet sizing</h1>
+        <p class="lede">The other side of pot odds. Every bet size offers the opponent a price, and that price sets how often they must defend, how often a bluff has to work, and how many bluffs a balanced range can hold. Below: the theory, the expected value of each size under your own read, and the sizing that gets the stacks in by the river.</p>
+      </header>
+
+      <section class="block">
+        <h2>What each size implies</h2>
+        <p class="sub">Pure game-theory identities for a bet of a given share of the pot. They assume the opponent knows your strategy and plays to exploit it.</p>
+        <div class="card table-scroll"><table class="data" id="theory"></table></div>
+        <p class="note"><strong>Minimum defence frequency</strong>: the share of their range the opponent must continue with, or any two cards profit as a bluff. <strong>Bluff break-even</strong>: how often a bet with no equity must make them fold. <strong>Balanced bluffs</strong>: on the river, with a range of nuts and air, the share of bluffs that leaves the opponent indifferent between calling and folding.</p>
+      </section>
+
+      <section class="block">
+        <h2>Which size earns the most</h2>
+        <p class="sub">Your read of how often the opponent folds to each size, and your equity when they call. The table finds the size with the highest expected value and compares it with checking.</p>
+        <div class="card">
+          <div class="form-row">
+            <label class="field">Pot<input type="number" id="pot" min="0" step="any" value="100"></label>
+            <label class="field">Equity when called (%)<input type="number" id="eqc" min="0" max="100" step="any" value="35"><span class="hint">Against the hands that continue</span></label>
+            <label class="field">Equity if you check (%)<input type="number" id="eqk" min="0" max="100" step="any" value="30"><span class="hint">Share of the pot you expect to win by checking</span></label>
+            <label class="field">Stack behind<input type="number" id="stack" min="0" step="any" value="1000"><span class="hint">Caps the bet size</span></label>
+          </div>
+          <div class="controls" style="margin-top:14px">
+            <span class="control">Fold rates <span id="fold-model"></span></span>
+          </div>
+          <div class="table-scroll"><table class="data" id="ev"></table></div>
+          <p class="note" id="ev-note"></p>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Geometric sizing</h2>
+        <p class="sub">The single bet size, as a share of the pot, that puts the whole stack in over the streets left if it is called every time. It is the usual way to get the most from a strong hand against a range that will keep calling.</p>
+        <div class="split">
+          <div class="card">
+            <div class="form-row">
+              <label class="field">Pot<input type="number" id="g-pot" min="0" step="any" value="10"></label>
+              <label class="field">Effective stack<input type="number" id="g-stack" min="0" step="any" value="95"></label>
+            </div>
+            <div class="controls" style="margin-top:14px"><span class="control">Streets left <span id="g-streets"></span></span></div>
+            <p class="formula" id="g-formula" style="margin-top:12px"></p>
+          </div>
+          <div class="card table-scroll"><table class="data" id="geo"></table></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Reading it</h2>
+        <div class="prose">
+          <p><strong>Small bets</strong> ask for little: a third of the pot needs a bluff to work only 25% of the time and forces the opponent to defend 75% of their range, so it pressures many hands cheaply and suits boards where your range is ahead overall. <strong>Large bets</strong> and overbets polarize: they build big pots with your strongest hands and can carry more bluffs, at the cost of folding out the weakest hands you beat.</p>
+          <p>The expected-value table is only as good as the fold rates you enter. The example rows assume an opponent who folds more to bigger bets, but less than the minimum-defence rate would allow; replace them with what you believe this opponent does. Keep in mind that the equity you have when called usually falls as the bet grows, because only stronger hands call. A fold rate above the bluff break-even makes a bluff profitable; below it, only bets with enough equity when called gain over checking.</p>
+          <p>These are single-street calculations. Real solutions also weigh how each size changes the play on later streets, which is why solvers often mix sizes.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../assets/odds.js"></script>
+  <script src="../assets/engine.js"></script>
+  <script src="../assets/ui.js"></script>
+  <script src="../assets/pages/sizing.js"></script>
+</body>
+</html>
