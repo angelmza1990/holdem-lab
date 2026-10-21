@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pot Odds · Hold'em Lab</title>
+  <meta name="description" content="Pot odds calculator for Texas Hold'em: the equity a call needs, the largest bet you can call with your outs or your hand, and the implied odds you would need.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/theme.css">
+  <style>
+    .kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 14px; }
+    .kpis .tile { padding: 10px 12px; }
+    .kpis .value { font-size: 20px; }
+    .outs-cards { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+    #curve svg { display: block; width: 100%; height: auto; }
+    #curve text { font: 11px var(--sans); fill: var(--muted); font-variant-numeric: tabular-nums; }
+    tr.current td { background: var(--hover); font-weight: 600; }
+    .mode-panel[hidden] { display: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Hold'em Lab</p>
+        <h1>Pot odds</h1>
+        <p class="lede">Should you call? Enter the pot, the bet you face and your chance of winning, as outs, as an equity, or from your cards against the opponent's range. The calculator shows the equity the call needs, the largest bet you can call, and how much you would have to win later to make up the difference.</p>
+      </header>
+
+      <section class="block">
+        <div class="split">
+          <div class="card">
+            <h3>The spot</h3>
+            <div class="form-row">
+              <label class="field">Pot before the bet<input type="number" id="pot" min="0" step="any" value="100"><span class="hint">Including earlier bets</span></label>
+              <label class="field">Bet to call<input type="number" id="bet" min="0" step="any" value="50"><span class="hint" id="bet-hint"></span></label>
+              <label class="field">Expected future winnings<input type="number" id="implied" min="0" step="any" value="0"><span class="hint">Implied odds, optional</span></label>
+            </div>
+
+            <h3 style="margin-top:20px">Your chance of winning</h3>
+            <div class="controls"><span id="mode"></span></div>
+
+            <div class="mode-panel" id="panel-outs">
+              <div class="form-row">
+                <label class="field">Outs<input type="number" id="outs" min="0" max="30" step="1" value="9"><span class="hint">Cards that make the best hand</span></label>
+              </div>
+              <div class="controls" style="margin-top:10px">
+                <span class="control">Street <span id="street"></span></span>
+                <span class="control">Cards that count <span id="draws"></span></span>
+              </div>
+              <p class="note" id="outs-note"></p>
+            </div>
+
+            <div class="mode-panel" id="panel-equity" hidden>
+              <div class="form-row">
+                <label class="field">Equity (%)<input type="number" id="eq" min="0" max="100" step="any" value="30"><span class="hint">From a calculator or your own estimate</span></label>
+              </div>
+            </div>
+
+            <div class="mode-panel" id="panel-cards" hidden>
+              <div class="btn-row" style="gap:18px;align-items:flex-start">
+                <div><h3 style="margin:0 0 6px">Your hand</h3><span id="hero"></span></div>
+                <div><h3 style="margin:0 0 6px">Board</h3><span id="board"></span></div>
+              </div>
+              <div id="picker" style="margin-top:12px"></div>
+              <label class="field" style="margin-top:12px">Opponent's range
+                <textarea class="range-text" id="villain" spellcheck="false">random</textarea>
+                <span class="hint">For example <code>TT+, AJs+, KQs, AQo+</code>, or open the preflop ranges page and copy one.</span>
+              </label>
+              <div class="controls" style="margin-top:10px"><span class="control">Use <span id="cards-basis"></span></span></div>
+              <p class="note" id="cards-status"></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Verdict</h3>
+            <div id="verdict"></div>
+            <div class="kpis" id="kpis"></div>
+            <div id="curve" class="chart" style="margin-top:18px"></div>
+            <p class="note">Blue curve: the equity a call needs for each bet size. Line: your equity. You can call every size where the curve is below the line.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="improve-block" hidden>
+        <h2>What the next cards can make</h2>
+        <p class="sub">Every unseen card, sorted by the best hand it gives you. Outs here are cards that improve your hand's category; not every one of them is sure to win, which is why the equity against a range is the better guide.</p>
+        <div class="card table-scroll"><table class="data" id="improve"></table></div>
+      </section>
+
+      <section class="block">
+        <h2>Every bet size</h2>
+        <p class="sub" id="sizes-sub">The same chance of winning against common bet sizes, as a share of the pot.</p>
+        <div class="card table-scroll"><table class="data" id="sizes"></table></div>
+      </section>
+
+      <section class="block">
+        <h2>Outs reference</h2>
+        <p class="sub">Exact chances with one or two cards to come, the rule-of-2-and-4 shortcut, and the largest bet (as a share of the pot) a draw can call for one card.</p>
+        <div class="card table-scroll"><table class="data" id="outs-table"></table></div>
+      </section>
+
+      <section class="block">
+        <h2>The formulas</h2>
+        <div class="prose">
+          <p>Facing a bet <em>B</em> into a pot <em>P</em>, calling risks <em>B</em> to win <em>P + B</em>. The call breaks even when your equity <em>e</em> satisfies</p>
+          <p class="formula">e × (P + B) = (1 − e) × B &nbsp;⇒&nbsp; e = B / (P + 2B)</p>
+          <p>So a half-pot bet needs 25%, a pot-size bet 33.3% and a 2× pot overbet 40%. Turning it around, the largest bet you can call with equity <em>e</em> is <span class="formula" style="display:inline-block;padding:2px 6px">B = e × P / (1 − 2e)</span>, and with 50% or more you can call any size.</p>
+          <p><strong>Implied odds</strong> are the extra chips you expect to win on later streets when you hit. If the call alone loses money, it breaks even once those future winnings reach <span class="formula" style="display:inline-block;padding:2px 6px">(1 − e) × B / e − (P + B)</span>.</p>
+          <p>With a draw on the flop, use the chance of hitting on the <strong>next card</strong> unless you are all in: if you miss the turn you will usually face another bet. The two-card figure is right when no more money can go in.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../assets/engine.js"></script>
+  <script src="../assets/odds.js"></script>
+  <script src="../assets/ui.js"></script>
+  <script src="../assets/pages/potodds.js"></script>
+</body>
+</html>
