@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preflop Ranges · Hold'em Lab</title>
+  <meta name="description" content="Preflop opening, 3-bet and calling ranges for 6-max Texas Hold'em on a 13x13 grid, with hand strength and a range editor.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/theme.css">
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Hold'em Lab</p>
+        <h1>Preflop ranges</h1>
+        <p class="lede">The 169 starting hands on one grid: pairs on the diagonal, suited hands above it, offsuit hands below. Baseline ranges for 6-max cash games at 100 big blinds, which you can edit and send to the equity calculator.</p>
+      </header>
+
+      <section class="block">
+        <div class="controls">
+          <label class="control">Spot <select id="scenario"></select></label>
+          <span class="control">Show <span id="view"></span></span>
+        </div>
+        <div class="split">
+          <div class="card">
+            <div class="range-grid" id="grid" aria-label="Range grid"></div>
+            <div class="legend" id="grid-legend"></div>
+          </div>
+          <div>
+            <div class="card">
+              <h2 id="spot-title"></h2>
+              <p class="sub" id="spot-note" style="margin-bottom:12px"></p>
+              <table class="data" id="summary">
+                <thead><tr><th>Action</th><th>Hands</th><th>Combos</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="card">
+              <h3>Edit</h3>
+              <div class="controls" style="margin-bottom:10px">
+                <span class="control">Brush <span id="brush"></span></span>
+                <span class="control">Frequency <span id="weight"></span></span>
+              </div>
+              <p class="note" style="margin:0 0 12px">Click or drag across the grid to paint. Or type ranges below, such as <code>QQ+, AKs, A5s-A2s, KQo:0.5</code>.</p>
+              <div id="texts"></div>
+              <p class="error" id="text-error" hidden></p>
+              <div class="btn-row" style="margin-top:12px">
+                <a class="btn" id="to-equity" href="../equity/">Equity of this range</a>
+                <button class="btn secondary" type="button" id="copy-link">Copy link</button>
+                <button class="btn secondary" type="button" id="reset">Reset</button>
+                <span class="note" id="copied" style="margin:0"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Reading the grid</h2>
+        <div class="prose">
+          <p>Each cell is a class of hands. A pair such as <strong>77</strong> has 6 card combinations, a suited hand such as <strong>AKs</strong> has 4 and an offsuit hand such as <strong>AKo</strong> has 12, so offsuit cells weigh three times as much as suited ones. In total there are 1,326 two-card combinations, and the percentages count combinations, not cells.</p>
+          <p>A partly filled cell is a mixed strategy: the hand takes that action that share of the time. Position drives width: each extra player left to act behind you is one more chance that someone holds a better hand, so ranges tighten from the button to under the gun.</p>
+          <p>The <strong>strength</strong> view colours each hand by its all-in equity against one, two or five random hands. It is a raw measure: it ignores position, playability and how often a hand can win without showdown, which is why suited connectors are opened ahead of some offsuit hands with more raw equity.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../assets/engine.js"></script>
+  <script src="../assets/ranges.js"></script>
+  <script src="../assets/ui.js"></script>
+  <script src="../assets/pages/ranges.js"></script>
+</body>
+</html>
