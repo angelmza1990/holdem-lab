@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equity Calculator · Hold'em Lab</title>
+  <meta name="description" content="Texas Hold'em equity calculator: hands or ranges for up to six players on any board, by exact enumeration or Monte Carlo simulation.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/theme.css">
+  <style>
+    .player { display: grid; grid-template-columns: 110px minmax(0, 1fr) 230px; gap: 16px; align-items: start; padding: 14px 0; border-top: 1px solid var(--line); }
+    .player:first-child { border-top: 0; padding-top: 0; }
+    .player .who { font-weight: 600; padding-top: 6px; }
+    .player .who button { display: block; margin-top: 6px; font: 12px var(--sans); color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
+    .player .res .big { font-size: 24px; font-weight: 650; letter-spacing: -0.01em; }
+    .player .res .meter { margin: 6px 0; }
+    .player .res small { color: var(--muted); font-size: 12px; display: block; }
+    .top-pct { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); margin-top: 6px; }
+    .top-pct input { width: 60px; font: 500 13px var(--sans); padding: 3px 6px; border: 1px solid var(--line-2); border-radius: 6px; background: var(--surface); color: var(--ink); }
+    .top-pct button, .linkish { font: 12px var(--sans); color: var(--accent); background: none; border: 0; cursor: pointer; padding: 0; text-decoration: underline; }
+    .status { color: var(--muted); font-size: 13px; }
+    .running .res { opacity: 0.6; }
+    @media (max-width: 760px) { .player { grid-template-columns: 1fr; gap: 8px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Hold'em Lab</p>
+        <h1>Equity calculator</h1>
+        <p class="lede">Each player's share of the pot if the hand were dealt to the river with no more betting. Give a player exact cards or a range, set the board, and the result updates on its own.</p>
+      </header>
+
+      <section class="block">
+        <div class="split">
+          <div class="card">
+            <h3>Board</h3>
+            <div class="btn-row">
+              <span id="board"></span>
+              <button class="linkish" type="button" id="clear-board">Clear board</button>
+            </div>
+            <h3 style="margin-top:18px">Cards</h3>
+            <div id="picker"></div>
+            <p class="note">Click a slot, then a card. Cards already in use are greyed out.</p>
+          </div>
+          <div class="card">
+            <h3>Result</h3>
+            <p class="status" id="status">Choose at least two players' hands or ranges.</p>
+            <p class="error" id="error" hidden></p>
+            <div class="btn-row" style="margin-top:10px">
+              <button class="btn secondary" type="button" id="add">Add player</button>
+              <button class="btn secondary" type="button" id="more">Run 1,000,000 trials</button>
+              <button class="btn secondary" type="button" id="share">Copy link</button>
+              <span class="note" id="copied" style="margin:0"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="card" id="players"></div>
+      </section>
+
+      <section class="block">
+        <h2>How to read it</h2>
+        <div class="prose">
+          <p><strong>Equity</strong> is the average share of the pot a player wins over every possible runout, splitting ties. It is what the hand is worth if all the money went in now; with more betting to come, position and skill decide how much of that equity a player actually realizes.</p>
+          <p>Against a <strong>range</strong>, every combination counts by how often it is played: <code>AKo:0.5</code> holds half the weight of <code>AKs</code> per combination, and combinations that clash with known cards are removed. When the number of possible deals is small enough the result is <strong>exact</strong>; otherwise it is estimated from random deals and shown with its margin of error (95% confidence).</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../assets/engine.js"></script>
+  <script src="../assets/ui.js"></script>
+  <script src="../assets/pages/equity.js"></script>
+</body>
+</html>
