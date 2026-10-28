@@ -10,8 +10,54 @@
   const EXAMPLES = { 2: "Pocket pair to a set", 4: "Gutshot straight draw", 5: "Pair to two pair or trips", 6: "Two overcards", 8: "Open-ended straight draw", 9: "Flush draw", 12: "Flush draw and gutshot", 15: "Flush draw and open-ended" };
 
   // ---------- inputs ----------
-  const inputs = ["pot", "bet", "implied", "outs", "eq"].map($);
+  const inputs = ["implied", "outs", "eq"].map($);
   inputs.forEach((i) => i.addEventListener("input", render));
+  // The bet can be typed as an amount or as a share of the pot; each field keeps the other in step.
+  const round = (v) => String(Math.round(v * 100) / 100);
+  const syncPct = () => {
+    const pot = UI.numberInput($("pot")), bet = UI.numberInput($("bet"));
+    if (pot > 0 && bet >= 0) $("bet-pct").value = round((bet / pot) * 100);
+  };
+  const syncBet = () => {
+    const pot = UI.numberInput($("pot")), share = UI.numberInput($("bet-pct"));
+    if (pot > 0 && share >= 0) $("bet").value = round((pot * share) / 100);
+  };
+  $("bet").addEventListener("input", () => { syncPct(); render(); });
+  $("bet-pct").addEventListener("input", () => { syncBet(); render(); });
+  // A new pot keeps the bet's share of it, so "half pot" stays half pot.
+  $("pot").addEventListener("input", () => { syncBet(); render(); });
+  const chips = $("size-chips");
+  SIZES.forEach((sz) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.dataset.s = sz;
+    b.textContent = `${Math.round(sz * 100)}% pot`;
+    b.addEventListener("click", () => { $("bet-pct").value = round(sz * 100); syncBet(); render(); });
+    chips.append(b);
+  });
+
+  /** Fewest outs that give at least `need` to hit in `draws` cards from `unseen`. */
+  const outsFor = (need, unseen, draws) => {
+    for (let n = 0; n <= 25; n++) if (O.hitProbability(n, unseen, draws) >= need) return n;
+    return null;
+  };
+
+  function quick(pot, bet) {
+    const el = $("quick");
+    chips.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(pot > 0 && Math.abs(+c.dataset.s * pot - bet) < 1e-6)));
+    if (!(pot > 0) || !(bet > 0)) { el.innerHTML = '<p class="muted" style="margin:0">Enter a pot and a bet to see the odds.</p>'; return; }
+    const need = O.requiredEquity(pot, bet);
+    const flop1 = outsFor(need, 47, 1), flop2 = outsFor(need, 47, 2), turn = outsFor(need, 46, 1);
+    const outs = (n) => (n == null ? "more than 25 outs" : `${n} out${n === 1 ? "" : "s"}`);
+    el.innerHTML = `
+      <div class="row">
+        <div><span>Bet</span><b>${pct(bet / pot, 0)} of the pot</b></div>
+        <div><span>Pot odds</span><b>${num(O.potOdds(pot, bet), 2)} : 1</b></div>
+        <div><span>Equity needed</span><b>${pct(need)}</b></div>
+      </div>
+      <p>Calling ${num(bet)} wins ${num(pot + bet)}: the call pays if you win more than ${pct(need)} of the time. With a draw that means at least <strong>${outs(turn)}</strong> on the turn for the river card, <strong>${outs(flop1)}</strong> on the flop for the next card, or <strong>${outs(flop2)}</strong> on the flop if you are all in and see both cards.</p>`;
+  }
   UI.seg($("mode"), [["outs", "Outs"], ["equity", "Equity"], ["cards", "My cards vs a range"]], state.mode, (m) => {
     state.mode = m;
     for (const k of ["outs", "equity", "cards"]) $(`panel-${k}`).hidden = k !== m;
@@ -118,7 +164,7 @@
     const pot = UI.numberInput($("pot")), bet = UI.numberInput($("bet"));
     const implied = UI.numberInput($("implied")) || 0;
     const c = chance();
-    $("bet-hint").textContent = pot > 0 && bet >= 0 ? `${pct(bet / pot, 0)} of the pot` : "";
+    quick(pot, bet);
     if (!(pot > 0) || !(bet > 0) || !c) {
       $("verdict").innerHTML = `<p class="muted">${!(pot > 0) || !(bet > 0) ? "Enter a pot and a bet greater than zero." : "Waiting for your chance of winning…"}</p>`;
       $("kpis").innerHTML = "";

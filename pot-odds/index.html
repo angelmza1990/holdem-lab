@@ -16,6 +16,12 @@
     #curve text { font: 11px var(--sans); fill: var(--muted); font-variant-numeric: tabular-nums; }
     tr.current td { background: var(--hover); font-weight: 600; }
     .mode-panel[hidden] { display: none; }
+    .quick { margin-top: 14px; padding: 12px 14px; border-radius: 8px; background: var(--hover); border: 1px solid var(--line); }
+    .quick .row { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+    .quick .row div { min-width: 0; }
+    .quick .row span { display: block; font-size: 12px; color: var(--muted); }
+    .quick .row b { font-size: 20px; font-weight: 650; font-variant-numeric: tabular-nums; }
+    .quick p { margin: 8px 0 0; font-size: 13.5px; color: var(--ink-2); }
   </style>
 </head>
 <body>
@@ -24,7 +30,7 @@
       <header class="page-head">
         <p class="eyebrow">Hold'em Lab</p>
         <h1>Pot odds</h1>
-        <p class="lede">Should you call? Enter the pot, the bet you face and your chance of winning, as outs, as an equity, or from your cards against the opponent's range. The calculator shows the equity the call needs, the largest bet you can call, and how much you would have to win later to make up the difference.</p>
+        <p class="lede">Should you call? Enter the pot and the bet you face, in chips or as a share of the pot, to see the pot odds and the equity a call needs. Add your chance of winning, as outs, as an equity, or from your cards against the opponent's range. The calculator shows the equity the call needs, the largest bet you can call, and how much you would have to win later to make up the difference.</p>
       </header>
 
       <section class="block">
@@ -33,9 +39,12 @@
             <h3>The spot</h3>
             <div class="form-row">
               <label class="field">Pot before the bet<input type="number" id="pot" min="0" step="any" value="100"><span class="hint">Including earlier bets</span></label>
-              <label class="field">Bet to call<input type="number" id="bet" min="0" step="any" value="50"><span class="hint" id="bet-hint"></span></label>
+              <label class="field">Bet to call<input type="number" id="bet" min="0" step="any" value="50"><span class="hint">In chips or big blinds</span></label>
+              <label class="field">Bet as % of the pot<input type="number" id="bet-pct" min="0" step="any" value="50"><span class="hint">Either field updates the other</span></label>
               <label class="field">Expected future winnings<input type="number" id="implied" min="0" step="any" value="0"><span class="hint">Implied odds, optional</span></label>
             </div>
+            <div class="chips" id="size-chips" style="margin-top:12px" aria-label="Common bet sizes"></div>
+            <div class="quick" id="quick"></div>
 
             <h3 style="margin-top:20px">Your chance of winning</h3>
             <div class="controls"><span id="mode"></span></div>
