@@ -10,6 +10,7 @@ Tools for the math of No-Limit Texas Hold'em: preflop ranges, an equity calculat
 - **[Equity calculator](https://angelmza1990.github.io/holdem-lab/equity/)**: exact cards or ranges for up to six players on any board. Exact enumeration when the number of deals is small, Monte Carlo with a margin of error otherwise, in a Web Worker.
 - **[Pot odds](https://angelmza1990.github.io/holdem-lab/pot-odds/)**: the bet in chips or as a share of the pot (with one-click common sizes) gives the pot odds, the equity a call needs and the outs that equity takes on each street; then, from your chance of winning (outs, an equity, or your cards against a range), the verdict, the EV of calling, the largest bet you can call, the implied odds you would need, every common bet size, what the next cards can make, and an outs reference table.
 - **[Bet sizing](https://angelmza1990.github.io/holdem-lab/bet-sizing/)**: minimum defence frequency, bluff break-even and balanced value-to-bluff ratios by size; the expected value of each size from your read of the opponent's fold rates; and geometric sizing to get all in by the river.
+- **[Trainer](https://angelmza1990.github.io/holdem-lab/trainer/)**: random flop and turn spots against a button or UTG opening range (or any two cards). Decide to call or fold, or guess your equity, then see the price, the exact equity and the expected value of the call; the session's score stays in the browser.
 - **[Method](https://angelmza1990.github.io/holdem-lab/method/)**: how it is computed and checked.
 
 ## How it works

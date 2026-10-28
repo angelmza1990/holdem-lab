@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trainer · Hold'em Lab</title>
+  <meta name="description" content="Practice pot odds and equity: random flop and turn spots against an opponent's range, where you decide to call or fold, or guess your equity, and see the exact numbers after each answer.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/theme.css">
+  <style>
+    .table-felt { border-radius: 14px; padding: 18px 20px; background: radial-gradient(ellipse at 50% 30%, color-mix(in srgb, #1f7a4d 16%, var(--surface)), var(--surface) 75%); border: 1px solid var(--line); }
+    .spot-row { display: flex; flex-wrap: wrap; gap: 14px 32px; align-items: flex-start; }
+    .spot-row h3 { margin: 0 0 6px; }
+    .spot-row .pc { min-width: 40px; height: 54px; font-size: 21px; }
+    .story { margin: 14px 0 0; font-size: 15px; color: var(--ink-2); max-width: 640px; }
+    .story b { color: var(--ink); }
+    .answer { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 16px; }
+    .answer .btn { min-width: 110px; justify-content: center; font-size: 15px; padding: 10px 18px; }
+    .guess { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 240px; max-width: 460px; }
+    .guess input[type="range"] { flex: 1; accent-color: var(--accent); }
+    .guess b { font-size: 20px; min-width: 56px; font-variant-numeric: tabular-nums; }
+    .result { margin-top: 18px; padding: 14px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); }
+    .result[hidden] { display: none; }
+    .result h3 { margin: 0 0 4px; font-size: 18px; text-transform: none; letter-spacing: 0; color: var(--ink); }
+    .result.good h3 { color: var(--pos-ink); }
+    .result.bad h3 { color: var(--neg-ink); }
+    .result p { margin: 6px 0 0; color: var(--ink-2); font-size: 14.5px; }
+    .eq-meter { position: relative; height: 12px; border-radius: 6px; background: var(--hover); margin: 18px 0 10px; }
+    .eq-meter i { position: absolute; top: -6px; bottom: -6px; width: 3px; border-radius: 2px; transform: translateX(-50%); }
+    .eq-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12.5px; color: var(--ink-2); }
+    .eq-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+    .history { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+    .history i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Hold'em Lab</p>
+        <h1>Trainer</h1>
+        <p class="lede">Random spots on the flop and the turn, against a realistic range. Decide whether the call pays, or guess how often your hand wins, then see the exact numbers. The aim is a feel for pot odds and equity you can use at the table without a calculator.</p>
+      </header>
+
+      <section class="block">
+        <div class="controls">
+          <span class="control">Mode <span id="mode"></span></span>
+          <span class="control">Street <span id="street"></span></span>
+          <span class="control">Opponent <span id="opp"></span></span>
+        </div>
+        <div class="table-felt">
+          <div class="spot-row">
+            <div><h3>Your hand</h3><div class="slots" id="hero"></div></div>
+            <div><h3>Board</h3><div class="slots" id="board"></div></div>
+            <div><h3>Pot</h3><div class="value" id="pot" style="font-size:24px;font-weight:650"></div></div>
+            <div><h3>Bet to call</h3><div class="value" id="bet" style="font-size:24px;font-weight:650"></div></div>
+          </div>
+          <p class="story" id="story"></p>
+          <div class="answer" id="answer"></div>
+          <div class="result" id="result" hidden></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Your session</h2>
+        <div class="tiles" id="stats"></div>
+        <div class="history" id="history" aria-label="Recent answers"></div>
+        <div class="btn-row" style="margin-top:12px"><button type="button" class="btn secondary" id="reset">Reset the session</button></div>
+      </section>
+
+      <section class="block">
+        <h2>How to think about it</h2>
+        <div class="prose">
+          <p><strong>The price.</strong> Calling a bet <em>B</em> into a pot <em>P</em> risks <em>B</em> to win <em>P + B</em>, so it pays when your equity is above <em>B</em> / (<em>P</em> + 2<em>B</em>): 25% against a half-pot bet, 33% against a pot-size bet.</p>
+          <p><strong>Your share.</strong> Equity is how often your hand wins (ties count as half) if the cards are dealt to the river, averaged over every hand the opponent could hold. Draws are worth roughly 4% per out on the flop with two cards to come and 2% per out on the turn. Made hands lose value against tight ranges, which hold more of the hands that beat them.</p>
+          <p><strong>What this leaves out.</strong> The trainer treats the call as the last money in the pot. In a real hand, more betting can follow: implied odds make some draws better calls than the raw numbers say, and the risk of facing another bet on the turn makes weak made hands worse. The <a href="../pot-odds/">pot odds page</a> covers implied odds.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../assets/engine.js"></script>
+  <script src="../assets/odds.js"></script>
+  <script src="../assets/ranges.js"></script>
+  <script src="../assets/ui.js"></script>
+  <script src="../assets/pages/trainer.js"></script>
+</body>
+</html>
