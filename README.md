@@ -11,6 +11,8 @@ Tools for the math of No-Limit Texas Hold'em: preflop ranges, an equity calculat
 - **[Pot odds](https://angelmza1990.github.io/holdem-lab/pot-odds/)**: the bet in chips or as a share of the pot (with one-click common sizes) gives the pot odds, the equity a call needs and the outs that equity takes on each street; then, from your chance of winning (outs, an equity, or your cards against a range), the verdict, the EV of calling, the largest bet you can call, the implied odds you would need, every common bet size, what the next cards can make, and an outs reference table.
 - **[Bet sizing](https://angelmza1990.github.io/holdem-lab/bet-sizing/)**: minimum defence frequency, bluff break-even and balanced value-to-bluff ratios by size; the expected value of each size from your read of the opponent's fold rates; and geometric sizing to get all in by the river.
 - **[Trainer](https://angelmza1990.github.io/holdem-lab/trainer/)**: random flop and turn spots against a button or UTG opening range (or any two cards). Decide to call or fold, or guess your equity, then see the price, the exact equity and the expected value of the call; the session's score stays in the browser.
+- **[Tournament history](https://angelmza1990.github.io/holdem-lab/history/)**: every WSOP Main Event since 1970 (champion, country, entrants, first prize, runner-up, winning hand), the players with the most WSOP bracelets, the WSOP Europe, European Poker Tour and WPT World Championship main events, WPT title leaders and Players of the Year, and the Triple Crown, with sortable and searchable tables.
+- **[All-time money list](https://angelmza1990.github.io/holdem-lab/money-list/)**: the top 15 live tournament earners from The Hendon Mob, totals by country, and the largest WSOP Main Event prizes.
 - **[Method](https://angelmza1990.github.io/holdem-lab/method/)**: how it is computed and checked.
 
 ## How it works
@@ -22,6 +24,8 @@ assets/engine.js          cards, 7-card evaluator, range parsing, equity (exact 
 assets/odds.js            pot odds and bet sizing formulas
 assets/ranges.js          baseline preflop ranges
 assets/equity-worker.js   runs equity off the main thread
+assets/records.js         sortable tables and bar charts for the history pages
+data/history.json         tournament records, written by scripts/build_history.mjs from the sources it lists
 scripts/                  precompute data/preflop-equity.json and data/matchups.json
 tests/                    engine and formula tests
 ```
@@ -37,6 +41,7 @@ python3 -m http.server 8080          # then open http://localhost:8080
 node --test tests/*.test.js          # FULL=1 adds the 7-card enumeration (about 10 s)
 node scripts/build_preflop_equity.js # rebuild the precomputed tables
 node scripts/build_matchups.js
+node scripts/build_history.mjs       # rebuild the tournament history and money list data
 ```
 
 ## License

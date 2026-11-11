@@ -10,6 +10,8 @@
     { id: "odds", href: "pot-odds/", label: "Pot odds" },
     { id: "sizing", href: "bet-sizing/", label: "Bet sizing" },
     { id: "trainer", href: "trainer/", label: "Trainer" },
+    { id: "history", href: "history/", label: "History" },
+    { id: "money", href: "money-list/", label: "Money list" },
     { id: "method", href: "method/", label: "Method" },
   ];
   const SUN = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>';

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All-Time Money List · Hold'em Lab</title>
+  <meta name="description" content="Poker's all-time live tournament money list: the top 15 earners, totals by country, and the largest WSOP Main Event prizes, with what the list does and doesn't measure.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/theme.css">
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Hold'em Lab</p>
+        <h1>All-time money list</h1>
+        <p class="lede">The players who have won the most in live tournaments, as recorded by The Hendon Mob. These are gross cashes: the list adds up prizes and subtracts nothing, so it measures how much and how high someone has played as much as how well.</p>
+        <p class="updated" id="updated"></p>
+      </header>
+
+      <section class="block">
+        <div class="tiles" id="tiles"></div>
+      </section>
+
+      <section class="block">
+        <h2>Top 15 live tournament earners</h2>
+        <p class="sub">Total cashes in US dollars, in millions. Most of the leaders made their totals in high-roller events with buy-ins of $25,000 to $250,000 or more, where the fields are small and the entry costs are large.</p>
+        <div class="card"><div id="ml-bars"></div></div>
+        <div class="card table-scroll" style="margin-top:16px"><table class="data" id="ml-table"></table></div>
+      </section>
+
+      <section class="block">
+        <div class="grid-2">
+          <div>
+            <h2>By country</h2>
+            <p class="sub">How the top 15 splits.</p>
+            <div class="card table-scroll"><table class="data" id="ml-countries"></table></div>
+          </div>
+          <div>
+            <h2>Largest WSOP Main Event prizes</h2>
+            <p class="sub">The biggest single scores on the most famous stage, for scale.</p>
+            <div class="card table-scroll"><table class="data" id="ml-me"></table></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>What the list leaves out</h2>
+        <div class="prose">
+          <p><strong>Buy-ins.</strong> A player who enters fifty $100,000 events a year spends $5 million before cashing once. Two players with the same total can be far apart in profit.</p>
+          <p><strong>Staking and swaps.</strong> Professionals often sell shares of their action or swap percentages with other players, so the person credited with a prize may keep only part of it.</p>
+          <p><strong>Cash games and online play.</strong> Some of the most successful players earn most of their money in private cash games or online, and never show up near the top.</p>
+          <p><strong>Inflation.</strong> Johnny Moss's $160,000 in 1974 would be worth roughly a million dollars today; the list compares nominal amounts.</p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div id="sources"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../assets/engine.js"></script>
+  <script src="../assets/ui.js"></script>
+  <script src="../assets/records.js"></script>
+  <script src="../assets/pages/moneylist.js"></script>
+</body>
+</html>

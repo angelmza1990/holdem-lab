@@ -1,0 +1,106 @@
+{
+ "updated": "2026-09",
+ "note": "Gross live tournament cashes recorded by The Hendon Mob. Buy-ins, staking, swaps, taxes, online results and cash games are not included.",
+ "players": [
+  {
+   "rank": 1,
+   "player": "Bryn Kenney",
+   "country": "United States",
+   "millions": 90.7
+  },
+  {
+   "rank": 2,
+   "player": "Stephen Chidwick",
+   "country": "United Kingdom",
+   "millions": 79
+  },
+  {
+   "rank": 3,
+   "player": "Jason Koon",
+   "country": "United States",
+   "millions": 77
+  },
+  {
+   "rank": 4,
+   "player": "Mikita Badziakouski",
+   "country": "Belarus",
+   "millions": 69.3
+  },
+  {
+   "rank": 5,
+   "player": "Adrián Mateos",
+   "country": "Spain",
+   "millions": 67.8
+  },
+  {
+   "rank": 6,
+   "player": "Justin Bonomo",
+   "country": "United States",
+   "millions": 65.6
+  },
+  {
+   "rank": 7,
+   "player": "Isaac Haxton",
+   "country": "United States",
+   "millions": 65.3
+  },
+  {
+   "rank": 8,
+   "player": "Dan Smith",
+   "country": "United States",
+   "millions": 61.3
+  },
+  {
+   "rank": 9,
+   "player": "Daniel Negreanu",
+   "country": "Canada",
+   "millions": 60.6
+  },
+  {
+   "rank": 10,
+   "player": "Alex Foxen",
+   "country": "United States",
+   "millions": 58.9
+  },
+  {
+   "rank": 11,
+   "player": "Phil Ivey",
+   "country": "United States",
+   "millions": 55.7
+  },
+  {
+   "rank": 12,
+   "player": "Daniel Dvoress",
+   "country": "Canada",
+   "millions": 54
+  },
+  {
+   "rank": 13,
+   "player": "David Peters",
+   "country": "United States",
+   "millions": 50.9
+  },
+  {
+   "rank": 14,
+   "player": "Fedor Holz",
+   "country": "Germany",
+   "millions": 50.6
+  },
+  {
+   "rank": 15,
+   "player": "Erik Seidel",
+   "country": "United States",
+   "millions": 49.2
+  }
+ ],
+ "sources": [
+  {
+   "label": "The Hendon Mob all-time money list",
+   "url": "https://pokerdb.thehendonmob.com/ranking/all-time-money-list/"
+  },
+  {
+   "label": "Poker Patio, ranking by earnings (2 Sep 2026)",
+   "url": "https://pokerpatio.com/blog/the-15-best-poker-players-of-all-time-ranked-by-earnings-2026/"
+  }
+ ]
+}

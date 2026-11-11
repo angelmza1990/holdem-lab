@@ -1,0 +1,2823 @@
+{
+ "updated": "2026-11-11",
+ "wsopMain": [
+  {
+   "year": 1970,
+   "winner": "Johnny Moss",
+   "country": "United States",
+   "entrants": 7,
+   "prize": null,
+   "runnerUp": null,
+   "hand": null,
+   "note": "Champion chosen by a vote of the players"
+  },
+  {
+   "year": 1971,
+   "winner": "Johnny Moss",
+   "country": "United States",
+   "entrants": 6,
+   "prize": 30000,
+   "runnerUp": "Jack Straus",
+   "hand": "6♣ 6♠"
+  },
+  {
+   "year": 1972,
+   "winner": "Amarillo Slim Preston",
+   "country": "United States",
+   "entrants": 8,
+   "prize": 80000,
+   "runnerUp": "Puggy Pearson",
+   "hand": "K♥ J♦"
+  },
+  {
+   "year": 1973,
+   "winner": "Puggy Pearson",
+   "country": "United States",
+   "entrants": 13,
+   "prize": 130000,
+   "runnerUp": "Johnny Moss",
+   "hand": "A♠ 7♠"
+  },
+  {
+   "year": 1974,
+   "winner": "Johnny Moss",
+   "country": "United States",
+   "entrants": 16,
+   "prize": 160000,
+   "runnerUp": "Crandell Addington",
+   "hand": "3♥ 3♠"
+  },
+  {
+   "year": 1975,
+   "winner": "Sailor Roberts",
+   "country": "United States",
+   "entrants": 21,
+   "prize": 210000,
+   "runnerUp": "Bob Hooks",
+   "hand": "J♠ J♥"
+  },
+  {
+   "year": 1976,
+   "winner": "Doyle Brunson",
+   "country": "United States",
+   "entrants": 22,
+   "prize": 220000,
+   "runnerUp": "Jesse Alto",
+   "hand": "10♠ 2♠"
+  },
+  {
+   "year": 1977,
+   "winner": "Doyle Brunson",
+   "country": "United States",
+   "entrants": 34,
+   "prize": 340000,
+   "runnerUp": "Gary Berland",
+   "hand": "10♠ 2♥"
+  },
+  {
+   "year": 1978,
+   "winner": "Bobby Baldwin",
+   "country": "United States",
+   "entrants": 42,
+   "prize": 210000,
+   "runnerUp": "Crandell Addington",
+   "hand": "Q♦ Q♣"
+  },
+  {
+   "year": 1979,
+   "winner": "Hal Fowler",
+   "country": "United States",
+   "entrants": 54,
+   "prize": 270000,
+   "runnerUp": "Bobby Hoff",
+   "hand": "7♠ 6♦"
+  },
+  {
+   "year": 1980,
+   "winner": "Stu Ungar",
+   "country": "United States",
+   "entrants": 73,
+   "prize": 365000,
+   "runnerUp": "Doyle Brunson",
+   "hand": "5♠ 4♠"
+  },
+  {
+   "year": 1981,
+   "winner": "Stu Ungar",
+   "country": "United States",
+   "entrants": 75,
+   "prize": 375000,
+   "runnerUp": "Perry Green",
+   "hand": "A♥ Q♥"
+  },
+  {
+   "year": 1982,
+   "winner": "Jack Straus",
+   "country": "United States",
+   "entrants": 104,
+   "prize": 520000,
+   "runnerUp": "Dewey Tomko",
+   "hand": "A♥ 10♠"
+  },
+  {
+   "year": 1983,
+   "winner": "Tom McEvoy",
+   "country": "United States",
+   "entrants": 108,
+   "prize": 540000,
+   "runnerUp": "Rod Peate",
+   "hand": "Q♦ Q♠"
+  },
+  {
+   "year": 1984,
+   "winner": "Jack Keller",
+   "country": "United States",
+   "entrants": 132,
+   "prize": 660000,
+   "runnerUp": "Byron Wolford",
+   "hand": "10♥ 10♠"
+  },
+  {
+   "year": 1985,
+   "winner": "Bill Smith",
+   "country": "United States",
+   "entrants": 140,
+   "prize": 700000,
+   "runnerUp": "T. J. Cloutier",
+   "hand": "3♠ 3♥"
+  },
+  {
+   "year": 1986,
+   "winner": "Berry Johnston",
+   "country": "United States",
+   "entrants": 141,
+   "prize": 570000,
+   "runnerUp": "Mike Harthcock",
+   "hand": "A♠ 10♥"
+  },
+  {
+   "year": 1987,
+   "winner": "Johnny Chan",
+   "country": "United States",
+   "entrants": 152,
+   "prize": 625000,
+   "runnerUp": "Frank Henderson",
+   "hand": "A♠ 9♣"
+  },
+  {
+   "year": 1988,
+   "winner": "Johnny Chan",
+   "country": "United States",
+   "entrants": 167,
+   "prize": 700000,
+   "runnerUp": "Erik Seidel",
+   "hand": "J♣ 9♣"
+  },
+  {
+   "year": 1989,
+   "winner": "Phil Hellmuth",
+   "country": "United States",
+   "entrants": 178,
+   "prize": 755000,
+   "runnerUp": "Johnny Chan",
+   "hand": "9♠ 9♣"
+  },
+  {
+   "year": 1990,
+   "winner": "Mansour Matloubi",
+   "country": "United Kingdom",
+   "entrants": 194,
+   "prize": 835000,
+   "runnerUp": "Hans Lund",
+   "hand": "6♥ 6♠"
+  },
+  {
+   "year": 1991,
+   "winner": "Brad Daugherty",
+   "country": "United States",
+   "entrants": 215,
+   "prize": 1000000,
+   "runnerUp": "Don Holt",
+   "hand": "K♠ J♠"
+  },
+  {
+   "year": 1992,
+   "winner": "Hamid Dastmalchi",
+   "country": "United States",
+   "entrants": 201,
+   "prize": 1000000,
+   "runnerUp": "Tom Jacobs",
+   "hand": "8♥ 4♣"
+  },
+  {
+   "year": 1993,
+   "winner": "Jim Bechtel",
+   "country": "United States",
+   "entrants": 231,
+   "prize": 1000000,
+   "runnerUp": "Glenn Cozen",
+   "hand": "J♠ 6♠"
+  },
+  {
+   "year": 1994,
+   "winner": "Russ Hamilton",
+   "country": "United States",
+   "entrants": 268,
+   "prize": 1000000,
+   "runnerUp": "Hugh Vincent",
+   "hand": "K♠ 8♥"
+  },
+  {
+   "year": 1995,
+   "winner": "Dan Harrington",
+   "country": "United States",
+   "entrants": 273,
+   "prize": 1000000,
+   "runnerUp": "Howard Goldfarb",
+   "hand": "9♦ 8♦"
+  },
+  {
+   "year": 1996,
+   "winner": "Huck Seed",
+   "country": "United States",
+   "entrants": 295,
+   "prize": 1000000,
+   "runnerUp": "Bruce Van Horn",
+   "hand": "9♦ 8♦"
+  },
+  {
+   "year": 1997,
+   "winner": "Stu Ungar",
+   "country": "United States",
+   "entrants": 312,
+   "prize": 1000000,
+   "runnerUp": "John Strzemp",
+   "hand": "A♥ 4♣"
+  },
+  {
+   "year": 1998,
+   "winner": "Scotty Nguyen",
+   "country": "United States",
+   "entrants": 350,
+   "prize": 1000000,
+   "runnerUp": "Kevin McBride",
+   "hand": "J♦ 9♣"
+  },
+  {
+   "year": 1999,
+   "winner": "Noel Furlong",
+   "country": "Ireland",
+   "entrants": 393,
+   "prize": 1000000,
+   "runnerUp": "Alan Goehring",
+   "hand": "5♣ 5♦"
+  },
+  {
+   "year": 2000,
+   "winner": "Chris Ferguson",
+   "country": "United States",
+   "entrants": 512,
+   "prize": 1500000,
+   "runnerUp": "T. J. Cloutier",
+   "hand": "A♠ 9♣"
+  },
+  {
+   "year": 2001,
+   "winner": "Carlos Mortensen",
+   "country": "Spain",
+   "entrants": 613,
+   "prize": 1500000,
+   "runnerUp": "Dewey Tomko",
+   "hand": "K♣ Q♣"
+  },
+  {
+   "year": 2002,
+   "winner": "Robert Varkonyi",
+   "country": "United States",
+   "entrants": 631,
+   "prize": 2000000,
+   "runnerUp": "Julian Gardner",
+   "hand": "Q♦ 10♠"
+  },
+  {
+   "year": 2003,
+   "winner": "Chris Moneymaker",
+   "country": "United States",
+   "entrants": 839,
+   "prize": 2500000,
+   "runnerUp": "Sam Farha",
+   "hand": "5♦ 4♠"
+  },
+  {
+   "year": 2004,
+   "winner": "Greg Raymer",
+   "country": "United States",
+   "entrants": 2576,
+   "prize": 5000000,
+   "runnerUp": "David Williams",
+   "hand": "8♠ 8♦"
+  },
+  {
+   "year": 2005,
+   "winner": "Joe Hachem",
+   "country": "Australia",
+   "entrants": 5619,
+   "prize": 7500000,
+   "runnerUp": "Steve Dannenmann",
+   "hand": "7♣ 3♠"
+  },
+  {
+   "year": 2006,
+   "winner": "Jamie Gold",
+   "country": "United States",
+   "entrants": 8773,
+   "prize": 12000000,
+   "runnerUp": "Paul Wasicka",
+   "hand": "Q♠ 9♣"
+  },
+  {
+   "year": 2007,
+   "winner": "Jerry Yang",
+   "country": "United States",
+   "entrants": 6358,
+   "prize": 8250000,
+   "runnerUp": "Tuan Lam",
+   "hand": "8♦ 8♣"
+  },
+  {
+   "year": 2008,
+   "winner": "Peter Eastgate",
+   "country": "Denmark",
+   "entrants": 6844,
+   "prize": 9152416,
+   "runnerUp": "Ivan Demidov",
+   "hand": "A♦ 5♠"
+  },
+  {
+   "year": 2009,
+   "winner": "Joe Cada",
+   "country": "United States",
+   "entrants": 6494,
+   "prize": 8547044,
+   "runnerUp": "Darvin Moon",
+   "hand": "9♦ 9♣"
+  },
+  {
+   "year": 2010,
+   "winner": "Jonathan Duhamel",
+   "country": "Canada",
+   "entrants": 7319,
+   "prize": 8944310,
+   "runnerUp": "John Racener",
+   "hand": "A♠ J♥"
+  },
+  {
+   "year": 2011,
+   "winner": "Pius Heinz",
+   "country": "Germany",
+   "entrants": 6865,
+   "prize": 8715638,
+   "runnerUp": "Martin Staszko",
+   "hand": "A♠ K♣"
+  },
+  {
+   "year": 2012,
+   "winner": "Greg Merson",
+   "country": "United States",
+   "entrants": 6598,
+   "prize": 8531853,
+   "runnerUp": "Jesse Sylvia",
+   "hand": "K♦ 5♦"
+  },
+  {
+   "year": 2013,
+   "winner": "Ryan Riess",
+   "country": "United States",
+   "entrants": 6352,
+   "prize": 8361570,
+   "runnerUp": "Jay Farber",
+   "hand": "A♥ K♥"
+  },
+  {
+   "year": 2014,
+   "winner": "Martin Jacobson",
+   "country": "Sweden",
+   "entrants": 6683,
+   "prize": 10000000,
+   "runnerUp": "Felix Stephensen",
+   "hand": "10♥ 10♦"
+  },
+  {
+   "year": 2015,
+   "winner": "Joe McKeehen",
+   "country": "United States",
+   "entrants": 6420,
+   "prize": 7683346,
+   "runnerUp": "Joshua Beckley",
+   "hand": "A♥ 10♦"
+  },
+  {
+   "year": 2016,
+   "winner": "Qui Nguyen",
+   "country": "United States",
+   "entrants": 6737,
+   "prize": 8005310,
+   "runnerUp": "Gordon Vayo",
+   "hand": "K♣ 10♣"
+  },
+  {
+   "year": 2017,
+   "winner": "Scott Blumstein",
+   "country": "United States",
+   "entrants": 7221,
+   "prize": 8150000,
+   "runnerUp": "Dan Ott",
+   "hand": "A♥ 2♦"
+  },
+  {
+   "year": 2018,
+   "winner": "John Cynn",
+   "country": "United States",
+   "entrants": 7874,
+   "prize": 8800000,
+   "runnerUp": "Tony Miles",
+   "hand": "K♣ J♣"
+  },
+  {
+   "year": 2019,
+   "winner": "Hossein Ensan",
+   "country": "Germany",
+   "entrants": 8569,
+   "prize": 10000000,
+   "runnerUp": "Dario Sammartino",
+   "hand": "K♥ K♣"
+  },
+  {
+   "year": 2020,
+   "winner": "Damián Salas",
+   "country": "Argentina",
+   "entrants": 1379,
+   "prize": 2550969,
+   "runnerUp": "Joseph Hebert",
+   "hand": "K♦ J♠",
+   "note": "Played online and live during the pandemic; the prize combines both parts"
+  },
+  {
+   "year": 2021,
+   "winner": "Koray Aldemir",
+   "country": "Germany",
+   "entrants": 6650,
+   "prize": 8000000,
+   "runnerUp": "George Holmes",
+   "hand": "10♦ 7♦"
+  },
+  {
+   "year": 2022,
+   "winner": "Espen Jørstad",
+   "country": "Norway",
+   "entrants": 8663,
+   "prize": 10000000,
+   "runnerUp": "Adrian Attenborough",
+   "hand": "Q♦ 2♠"
+  },
+  {
+   "year": 2023,
+   "winner": "Daniel Weinman",
+   "country": "United States",
+   "entrants": 10043,
+   "prize": 12100000,
+   "runnerUp": "Steven Jones",
+   "hand": "K♣ J♦"
+  },
+  {
+   "year": 2024,
+   "winner": "Jonathan Tamayo",
+   "country": "United States",
+   "entrants": 10112,
+   "prize": 10000000,
+   "runnerUp": "Jordan Griff",
+   "hand": "8♦ 3♠"
+  },
+  {
+   "year": 2025,
+   "winner": "Michael Mizrachi",
+   "country": "United States",
+   "entrants": 9735,
+   "prize": 10000000,
+   "runnerUp": "John Wasnock",
+   "hand": "10♣ 3♣"
+  },
+  {
+   "year": 2026,
+   "winner": "Lucas Jumalon",
+   "country": "United States",
+   "entrants": 9208,
+   "prize": 10000000,
+   "runnerUp": "Lauri Sääskilahti",
+   "hand": "K♠ 6♦"
+  }
+ ],
+ "bracelets": [
+  {
+   "player": "Phil Hellmuth",
+   "country": "United States",
+   "total": 17,
+   "vegas": 16,
+   "online": 0,
+   "other": 1,
+   "first": 1989,
+   "last": 2023
+  },
+  {
+   "player": "Phil Ivey",
+   "country": "United States",
+   "total": 11,
+   "vegas": 10,
+   "online": 0,
+   "other": 1,
+   "first": 2000,
+   "last": 2024
+  },
+  {
+   "player": "Doyle Brunson",
+   "country": "United States",
+   "total": 10,
+   "vegas": 10,
+   "online": 0,
+   "other": 0,
+   "first": 1976,
+   "last": 2005
+  },
+  {
+   "player": "Johnny Chan",
+   "country": "United States",
+   "total": 10,
+   "vegas": 10,
+   "online": 0,
+   "other": 0,
+   "first": 1985,
+   "last": 2005
+  },
+  {
+   "player": "Erik Seidel",
+   "country": "United States",
+   "total": 10,
+   "vegas": 8,
+   "online": 1,
+   "other": 1,
+   "first": 1992,
+   "last": 2023
+  },
+  {
+   "player": "Shaun Deeb",
+   "country": "United States",
+   "total": 9,
+   "vegas": 8,
+   "online": 0,
+   "other": 1,
+   "first": 2015,
+   "last": 2026
+  },
+  {
+   "player": "Benny Glaser",
+   "country": "United Kingdom",
+   "total": 9,
+   "vegas": 9,
+   "online": 0,
+   "other": 0,
+   "first": 2015,
+   "last": 2026
+  },
+  {
+   "player": "Michael Mizrachi",
+   "country": "United States",
+   "total": 9,
+   "vegas": 7,
+   "online": 1,
+   "other": 1,
+   "first": 2010,
+   "last": 2026
+  },
+  {
+   "player": "Johnny Moss",
+   "country": "United States",
+   "total": 9,
+   "vegas": 9,
+   "online": 0,
+   "other": 0,
+   "first": 1970,
+   "last": 1988
+  },
+  {
+   "player": "Daniel Negreanu",
+   "country": "Canada",
+   "total": 8,
+   "vegas": 6,
+   "online": 0,
+   "other": 2,
+   "first": 1998,
+   "last": 2026
+  },
+  {
+   "player": "Nick Schulman",
+   "country": "United States",
+   "total": 8,
+   "vegas": 7,
+   "online": 0,
+   "other": 1,
+   "first": 2009,
+   "last": 2026
+  },
+  {
+   "player": "Calvin Anderson",
+   "country": "United States",
+   "total": 7,
+   "vegas": 5,
+   "online": 2,
+   "other": 0,
+   "first": 2014,
+   "last": 2026
+  },
+  {
+   "player": "Josh Arieh",
+   "country": "United States",
+   "total": 7,
+   "vegas": 6,
+   "online": 1,
+   "other": 0,
+   "first": 1999,
+   "last": 2025
+  },
+  {
+   "player": "Billy Baxter",
+   "country": "United States",
+   "total": 7,
+   "vegas": 7,
+   "online": 0,
+   "other": 0,
+   "first": 1975,
+   "last": 2002
+  },
+  {
+   "player": "John Hennigan",
+   "country": "United States",
+   "total": 7,
+   "vegas": 7,
+   "online": 0,
+   "other": 0,
+   "first": 2002,
+   "last": 2024
+  },
+  {
+   "player": "Men Nguyen",
+   "country": "United States",
+   "total": 7,
+   "vegas": 7,
+   "online": 0,
+   "other": 0,
+   "first": 1992,
+   "last": 2010
+  },
+  {
+   "player": "Brian Rast",
+   "country": "United States",
+   "total": 7,
+   "vegas": 7,
+   "online": 0,
+   "other": 0,
+   "first": 2011,
+   "last": 2025
+  },
+  {
+   "player": "Scott Seiver",
+   "country": "United States",
+   "total": 7,
+   "vegas": 7,
+   "online": 0,
+   "other": 0,
+   "first": 2008,
+   "last": 2024
+  },
+  {
+   "player": "Jeremy Ausmus",
+   "country": "United States",
+   "total": 6,
+   "vegas": 3,
+   "online": 2,
+   "other": 1,
+   "first": 2013,
+   "last": 2023
+  },
+  {
+   "player": "T. J. Cloutier",
+   "country": "United States",
+   "total": 6,
+   "vegas": 6,
+   "online": 0,
+   "other": 0,
+   "first": 1987,
+   "last": 2005
+  },
+  {
+   "player": "Yuri Dzivielevski",
+   "country": "Brazil",
+   "total": 6,
+   "vegas": 4,
+   "online": 2,
+   "other": 0,
+   "first": 2019,
+   "last": 2026
+  },
+  {
+   "player": "Chris Ferguson",
+   "country": "United States",
+   "total": 6,
+   "vegas": 5,
+   "online": 0,
+   "other": 1,
+   "first": 2000,
+   "last": 2017
+  },
+  {
+   "player": "Layne Flack",
+   "country": "United States",
+   "total": 6,
+   "vegas": 6,
+   "online": 0,
+   "other": 0,
+   "first": 1999,
+   "last": 2008
+  },
+  {
+   "player": "Ted Forrest",
+   "country": "United States",
+   "total": 6,
+   "vegas": 6,
+   "online": 0,
+   "other": 0,
+   "first": 1993,
+   "last": 2014
+  },
+  {
+   "player": "Kristen Foxen",
+   "country": "Canada",
+   "total": 6,
+   "vegas": 3,
+   "online": 3,
+   "other": 0,
+   "first": 2013,
+   "last": 2026
+  },
+  {
+   "player": "Brian Hastings",
+   "country": "United States",
+   "total": 6,
+   "vegas": 6,
+   "online": 0,
+   "other": 0,
+   "first": 2012,
+   "last": 2022
+  },
+  {
+   "player": "Jay Heimowitz",
+   "country": "United States",
+   "total": 6,
+   "vegas": 6,
+   "online": 0,
+   "other": 0,
+   "first": 1975,
+   "last": 2001
+  },
+  {
+   "player": "Martin Kabrhel",
+   "country": "Czech Republic",
+   "total": 6,
+   "vegas": 1,
+   "online": 1,
+   "other": 4,
+   "first": 2017,
+   "last": 2026
+  },
+  {
+   "player": "Jeff Lisandro",
+   "country": "Australia",
+   "total": 6,
+   "vegas": 4,
+   "online": 0,
+   "other": 2,
+   "first": 2007,
+   "last": 2014
+  },
+  {
+   "player": "Adrián Mateos",
+   "country": "Spain",
+   "total": 6,
+   "vegas": 4,
+   "online": 1,
+   "other": 1,
+   "first": 2013,
+   "last": 2026
+  },
+  {
+   "player": "Jason Mercier",
+   "country": "United States",
+   "total": 6,
+   "vegas": 6,
+   "online": 0,
+   "other": 0,
+   "first": 2009,
+   "last": 2023
+  }
+ ],
+ "wsope": [
+  {
+   "year": 2007,
+   "city": "London",
+   "entrants": 362,
+   "winner": "Annette Obrestad",
+   "country": "Norway",
+   "prize": 1000000,
+   "currency": "GBP"
+  },
+  {
+   "year": 2008,
+   "city": "London",
+   "entrants": 362,
+   "winner": "John Juanda",
+   "country": "United States",
+   "prize": 868800,
+   "currency": "GBP"
+  },
+  {
+   "year": 2009,
+   "city": "London",
+   "entrants": 334,
+   "winner": "Barry Shulman",
+   "country": "United States",
+   "prize": 801603,
+   "currency": "GBP"
+  },
+  {
+   "year": 2010,
+   "city": "London",
+   "entrants": 346,
+   "winner": "James Bord",
+   "country": "United Kingdom",
+   "prize": 830401,
+   "currency": "GBP"
+  },
+  {
+   "year": 2011,
+   "city": "Cannes",
+   "entrants": 593,
+   "winner": "Elio Fox",
+   "country": "United States",
+   "prize": 1400000,
+   "currency": "EUR"
+  },
+  {
+   "year": 2012,
+   "city": "Cannes",
+   "entrants": 420,
+   "winner": "Phil Hellmuth",
+   "country": "United States",
+   "prize": 1022376,
+   "currency": "EUR"
+  },
+  {
+   "year": 2013,
+   "city": "Enghien-les-Bains",
+   "entrants": 375,
+   "winner": "Adrián Mateos",
+   "country": "Spain",
+   "prize": 1000000,
+   "currency": "EUR"
+  },
+  {
+   "year": 2015,
+   "city": "Berlin",
+   "entrants": 313,
+   "winner": "Kevin MacPhee",
+   "country": "United States",
+   "prize": 883000,
+   "currency": "EUR"
+  },
+  {
+   "year": 2017,
+   "city": "Rozvadov",
+   "entrants": 529,
+   "winner": "Marti Roca de Torres",
+   "country": "Spain",
+   "prize": 1115207,
+   "currency": "EUR"
+  },
+  {
+   "year": 2018,
+   "city": "Rozvadov",
+   "entrants": 534,
+   "winner": "Jack Sinclair",
+   "country": "United Kingdom",
+   "prize": 1122239,
+   "currency": "EUR"
+  },
+  {
+   "year": 2019,
+   "city": "Rozvadov",
+   "entrants": 541,
+   "winner": "Alexandros Kolonias",
+   "country": "Greece",
+   "prize": 1133678,
+   "currency": "EUR"
+  },
+  {
+   "year": 2021,
+   "city": "Rozvadov",
+   "entrants": 688,
+   "winner": "Josef Guláš",
+   "country": "Czech Republic",
+   "prize": 1276712,
+   "currency": "EUR"
+  },
+  {
+   "year": 2022,
+   "city": "Rozvadov",
+   "entrants": 763,
+   "winner": "Omar Eljach",
+   "country": "Sweden",
+   "prize": 1380129,
+   "currency": "EUR"
+  },
+  {
+   "year": 2023,
+   "city": "Rozvadov",
+   "entrants": 817,
+   "winner": "Max Neugebauer",
+   "country": "Austria",
+   "prize": 1500000,
+   "currency": "EUR"
+  },
+  {
+   "year": 2024,
+   "city": "Rozvadov",
+   "entrants": 768,
+   "winner": "Simone Andrian",
+   "country": "Italy",
+   "prize": 1300000,
+   "currency": "EUR"
+  },
+  {
+   "year": 2025,
+   "city": "Rozvadov",
+   "entrants": 659,
+   "winner": "Daniel Pidun",
+   "country": "Germany",
+   "prize": 1140000,
+   "currency": "EUR"
+  },
+  {
+   "year": 2026,
+   "city": "Prague",
+   "entrants": 2617,
+   "winner": "Marius Kudzmanas",
+   "country": "Lithuania",
+   "prize": 2000000,
+   "currency": "EUR",
+   "note": "Buy-in cut from €10,350 to €5,300; record field"
+  }
+ ],
+ "ept": [
+  {
+   "season": "1",
+   "date": "2004-09",
+   "city": "Barcelona",
+   "winner": "Alexander Stevic",
+   "country": "Sweden",
+   "prize": 80000,
+   "currency": "EUR"
+  },
+  {
+   "season": "1",
+   "date": "2004-10",
+   "city": "London",
+   "winner": "John Shipley",
+   "country": "United Kingdom",
+   "prize": 200000,
+   "currency": "GBP"
+  },
+  {
+   "season": "1",
+   "date": "2004-10",
+   "city": "Dublin",
+   "winner": "Ram Vaswani",
+   "country": "United Kingdom",
+   "prize": 93000,
+   "currency": "EUR"
+  },
+  {
+   "season": "1",
+   "date": "2005-01",
+   "city": "Copenhagen",
+   "winner": "Noah Boeken",
+   "country": "Netherlands",
+   "prize": 1098340,
+   "currency": "DKK"
+  },
+  {
+   "season": "1",
+   "date": "2005-02",
+   "city": "Deauville",
+   "winner": "Brandon Schaefer",
+   "country": "United States",
+   "prize": 144000,
+   "currency": "EUR"
+  },
+  {
+   "season": "1",
+   "date": "2005-03",
+   "city": "Vienna",
+   "winner": "Pascal Perrault",
+   "country": "France",
+   "prize": 184500,
+   "currency": "EUR"
+  },
+  {
+   "season": "1",
+   "date": "2005-03",
+   "city": "Monte Carlo",
+   "winner": "Rob Hollink",
+   "country": "Netherlands",
+   "prize": 635000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2",
+   "date": "2005-09",
+   "city": "Barcelona",
+   "winner": "Jan Boubli",
+   "country": "France",
+   "prize": 426000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2",
+   "date": "2005-10",
+   "city": "London",
+   "winner": "Mark Teltscher",
+   "country": "United Kingdom",
+   "prize": 280000,
+   "currency": "GBP"
+  },
+  {
+   "season": "2",
+   "date": "2005-10",
+   "city": "Baden",
+   "winner": "Patrik Antonius",
+   "country": "Finland",
+   "prize": 288180,
+   "currency": "EUR"
+  },
+  {
+   "season": "2",
+   "date": "2005-10",
+   "city": "Dublin",
+   "winner": "Mats Gavatin",
+   "country": "Sweden",
+   "prize": 317000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2",
+   "date": "2006-01",
+   "city": "Copenhagen",
+   "winner": "Mads Andersen",
+   "country": "Denmark",
+   "prize": 2548040,
+   "currency": "DKK"
+  },
+  {
+   "season": "2",
+   "date": "2006-02",
+   "city": "Deauville",
+   "winner": "Mats Iremark",
+   "country": "Sweden",
+   "prize": 480000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2",
+   "date": "2006-03",
+   "city": "Monte Carlo",
+   "winner": "Jeff Williams",
+   "country": "United States",
+   "prize": 900000,
+   "currency": "EUR"
+  },
+  {
+   "season": "3",
+   "date": "2006-09",
+   "city": "Barcelona",
+   "winner": "Bjørn-Erik Glenne",
+   "country": "Norway",
+   "prize": 691000,
+   "currency": "EUR"
+  },
+  {
+   "season": "3",
+   "date": "2006-09",
+   "city": "London",
+   "winner": "Victoria Coren",
+   "country": "United Kingdom",
+   "prize": 500000,
+   "currency": "GBP"
+  },
+  {
+   "season": "3",
+   "date": "2006-10",
+   "city": "Baden",
+   "winner": "Duc Thang Nguyen",
+   "country": "Germany",
+   "prize": 487397,
+   "currency": "EUR"
+  },
+  {
+   "season": "3",
+   "date": "2006-10",
+   "city": "Dublin",
+   "winner": "Roland De Wolfe",
+   "country": "United Kingdom",
+   "prize": 554300,
+   "currency": "EUR"
+  },
+  {
+   "season": "3",
+   "date": "2007-01",
+   "city": "Copenhagen",
+   "winner": "Magnus Petersson",
+   "country": "Sweden",
+   "prize": 4078080,
+   "currency": "DKK"
+  },
+  {
+   "season": "3",
+   "date": "2007-03",
+   "city": "Dortmund",
+   "winner": "Andreas Høivold",
+   "country": "Norway",
+   "prize": 672000,
+   "currency": "EUR"
+  },
+  {
+   "season": "3",
+   "date": "2007-03",
+   "city": "Warsaw",
+   "winner": "Peter Jepsen",
+   "country": "Denmark",
+   "prize": 1226711,
+   "currency": "PLN"
+  },
+  {
+   "season": "3",
+   "date": "2007-04",
+   "city": "Monte Carlo",
+   "winner": "Gavin Griffin",
+   "country": "United States",
+   "prize": 1825010,
+   "currency": "EUR"
+  },
+  {
+   "season": "4",
+   "date": "2007-08",
+   "city": "Barcelona",
+   "winner": "Sander Lylloff",
+   "country": "Denmark",
+   "prize": 1170700,
+   "currency": "EUR"
+  },
+  {
+   "season": "4",
+   "date": "2007-09",
+   "city": "London",
+   "winner": "Joseph Mouawad",
+   "country": "Lebanon",
+   "prize": 611520,
+   "currency": "GBP"
+  },
+  {
+   "season": "4",
+   "date": "2007-10",
+   "city": "Baden",
+   "winner": "Julian Thew",
+   "country": "United Kingdom",
+   "prize": 670800,
+   "currency": "EUR"
+  },
+  {
+   "season": "4",
+   "date": "2007-10",
+   "city": "Dublin",
+   "winner": "Reuben Peters",
+   "country": "United States",
+   "prize": 532620,
+   "currency": "EUR"
+  },
+  {
+   "season": "4",
+   "date": "2007-12",
+   "city": "Prague",
+   "winner": "Arnaud Mattern",
+   "country": "France",
+   "prize": 708400,
+   "currency": "EUR"
+  },
+  {
+   "season": "4",
+   "date": "2008-01",
+   "city": "Bahamas",
+   "winner": "Bertrand Grospellier",
+   "country": "France",
+   "prize": 2000000,
+   "currency": "USD"
+  },
+  {
+   "season": "4",
+   "date": "2008-01",
+   "city": "Dortmund",
+   "winner": "Mike McDonald",
+   "country": "Canada",
+   "prize": 933600,
+   "currency": "EUR"
+  },
+  {
+   "season": "4",
+   "date": "2008-02",
+   "city": "Copenhagen",
+   "winner": "Tim Vance",
+   "country": "United States",
+   "prize": 6220488,
+   "currency": "DKK"
+  },
+  {
+   "season": "4",
+   "date": "2008-03",
+   "city": "Warsaw",
+   "winner": "Michael Schulze",
+   "country": "Germany",
+   "prize": 2153999,
+   "currency": "PLN"
+  },
+  {
+   "season": "4",
+   "date": "2008-04",
+   "city": "Sanremo",
+   "winner": "Jason Mercier",
+   "country": "United States",
+   "prize": 869000,
+   "currency": "EUR"
+  },
+  {
+   "season": "4",
+   "date": "2008-04",
+   "city": "Monte Carlo",
+   "winner": "Glen Chorny",
+   "country": "Canada",
+   "prize": 2020000,
+   "currency": "EUR"
+  },
+  {
+   "season": "5",
+   "date": "2008-09",
+   "city": "Barcelona",
+   "winner": "Sebastian Ruthenberg",
+   "country": "Germany",
+   "prize": 1361000,
+   "currency": "EUR"
+  },
+  {
+   "season": "5",
+   "date": "2008-10",
+   "city": "London",
+   "winner": "Michael Martin",
+   "country": "United States",
+   "prize": 1000000,
+   "currency": "GBP"
+  },
+  {
+   "season": "5",
+   "date": "2008-10",
+   "city": "Budapest",
+   "winner": "Will Fry",
+   "country": "United Kingdom",
+   "prize": 595840,
+   "currency": "EUR"
+  },
+  {
+   "season": "5",
+   "date": "2008-11",
+   "city": "Warsaw",
+   "winner": "João Barbosa",
+   "country": "Portugal",
+   "prize": 367140,
+   "currency": "EUR"
+  },
+  {
+   "season": "5",
+   "date": "2008-12",
+   "city": "Prague",
+   "winner": "Salvatore Bonavena",
+   "country": "Italy",
+   "prize": 774000,
+   "currency": "EUR"
+  },
+  {
+   "season": "5",
+   "date": "2009-01",
+   "city": "Bahamas",
+   "winner": "Poorya Nazari",
+   "country": "Canada",
+   "prize": 3000000,
+   "currency": "USD"
+  },
+  {
+   "season": "5",
+   "date": "2009-02",
+   "city": "Deauville",
+   "winner": "Moritz Kranich",
+   "country": "Germany",
+   "prize": 851400,
+   "currency": "EUR"
+  },
+  {
+   "season": "5",
+   "date": "2009-02",
+   "city": "Copenhagen",
+   "winner": "Jens Kyllönen",
+   "country": "Finland",
+   "prize": 6542208,
+   "currency": "DKK"
+  },
+  {
+   "season": "5",
+   "date": "2009-03",
+   "city": "Dortmund",
+   "winner": "Sandra Naujoks",
+   "country": "Germany",
+   "prize": 917000,
+   "currency": "EUR"
+  },
+  {
+   "season": "5",
+   "date": "2009-04",
+   "city": "Sanremo",
+   "winner": "Constant Rijkenberg",
+   "country": "Netherlands",
+   "prize": 1508000,
+   "currency": "EUR"
+  },
+  {
+   "season": "5",
+   "date": "2009-05",
+   "city": "Monte Carlo",
+   "winner": "Pieter de Korver",
+   "country": "Netherlands",
+   "prize": 2300000,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2009-08",
+   "city": "Kyiv",
+   "winner": "Maxim Lykov",
+   "country": "Russia",
+   "prize": 330000,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2009-09",
+   "city": "Barcelona",
+   "winner": "Carter Phillips",
+   "country": "United States",
+   "prize": 850000,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2009-10",
+   "city": "London",
+   "winner": "Aaron Gustavson",
+   "country": "United States",
+   "prize": 850000,
+   "currency": "GBP"
+  },
+  {
+   "season": "6",
+   "date": "2009-10",
+   "city": "Warsaw",
+   "winner": "Christophe Benzimra",
+   "country": "France",
+   "prize": 1493170,
+   "currency": "PLN"
+  },
+  {
+   "season": "6",
+   "date": "2009-11",
+   "city": "Vilamoura",
+   "winner": "António Matias",
+   "country": "Portugal",
+   "prize": 404793,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2009-12",
+   "city": "Prague",
+   "winner": "Jan Škampa",
+   "country": "Czech Republic",
+   "prize": 682000,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2010-01",
+   "city": "Bahamas",
+   "winner": "Harrison Gimbel",
+   "country": "United States",
+   "prize": 2200000,
+   "currency": "USD"
+  },
+  {
+   "season": "6",
+   "date": "2010-01",
+   "city": "Deauville",
+   "winner": "Jake Cody",
+   "country": "United Kingdom",
+   "prize": 847000,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2010-02",
+   "city": "Copenhagen",
+   "winner": "Anton Wigg",
+   "country": "Sweden",
+   "prize": 3675000,
+   "currency": "DKK"
+  },
+  {
+   "season": "6",
+   "date": "2010-03",
+   "city": "Berlin",
+   "winner": "Kevin MacPhee",
+   "country": "United States",
+   "prize": 1000000,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2010-03",
+   "city": "Snowfest (Austria)",
+   "winner": "Allan Bække",
+   "country": "Denmark",
+   "prize": 445000,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2010-04",
+   "city": "Sanremo",
+   "winner": "Liv Boeree",
+   "country": "United Kingdom",
+   "prize": 1250000,
+   "currency": "EUR"
+  },
+  {
+   "season": "6",
+   "date": "2010-04",
+   "city": "Monte Carlo",
+   "winner": "Nicolas Chouity",
+   "country": "Lebanon",
+   "prize": 1700000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2010-08",
+   "city": "Tallinn",
+   "winner": "Kevin Stani",
+   "country": "Norway",
+   "prize": 400000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2010-08",
+   "city": "Vilamoura",
+   "winner": "Toby Lewis",
+   "country": "United Kingdom",
+   "prize": 467836,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2010-09",
+   "city": "London",
+   "winner": "David Vamplew",
+   "country": "United Kingdom",
+   "prize": 900000,
+   "currency": "GBP"
+  },
+  {
+   "season": "7",
+   "date": "2010-10",
+   "city": "Vienna",
+   "winner": "Michael Eiler",
+   "country": "Germany",
+   "prize": 700000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2010-11",
+   "city": "Barcelona",
+   "winner": "Kent Lundmark",
+   "country": "Sweden",
+   "prize": 825000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2010-12",
+   "city": "Prague",
+   "winner": "Roberto Romanello",
+   "country": "United Kingdom",
+   "prize": 640000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2011-01",
+   "city": "Bahamas",
+   "winner": "Galen Hall",
+   "country": "United States",
+   "prize": 2300000,
+   "currency": "USD"
+  },
+  {
+   "season": "7",
+   "date": "2011-01",
+   "city": "Deauville",
+   "winner": "Lucien Cohen",
+   "country": "France",
+   "prize": 880000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2011-02",
+   "city": "Copenhagen",
+   "winner": "Michael Tureniec",
+   "country": "Sweden",
+   "prize": 3700000,
+   "currency": "DKK"
+  },
+  {
+   "season": "7",
+   "date": "2011-03",
+   "city": "Snowfest (Austria)",
+   "winner": "Vladimir Geshkenbein",
+   "country": "Russia",
+   "prize": 390000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2011-04",
+   "city": "Berlin",
+   "winner": "Ben Wilinofsky",
+   "country": "Canada",
+   "prize": 825000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2011-04",
+   "city": "Sanremo",
+   "winner": "Rupert Elder",
+   "country": "United Kingdom",
+   "prize": 930000,
+   "currency": "EUR"
+  },
+  {
+   "season": "7",
+   "date": "2011-05",
+   "city": "Madrid",
+   "winner": "Ivan Freitez",
+   "country": "Venezuela",
+   "prize": 1500000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2011-08",
+   "city": "Tallinn",
+   "winner": "Ronny Kaiser",
+   "country": "Switzerland",
+   "prize": 275000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2011-08",
+   "city": "Barcelona",
+   "winner": "Martin Schleich",
+   "country": "Germany",
+   "prize": 850000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2011-09",
+   "city": "London",
+   "winner": "Benny Spindler",
+   "country": "Germany",
+   "prize": 750000,
+   "currency": "GBP"
+  },
+  {
+   "season": "8",
+   "date": "2011-10",
+   "city": "Sanremo",
+   "winner": "Andrey Pateychuk",
+   "country": "Russia",
+   "prize": 680000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2011-11",
+   "city": "Loutraki",
+   "winner": "Zimnan Ziyard",
+   "country": "United Kingdom",
+   "prize": 347000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2011-12",
+   "city": "Prague",
+   "winner": "Martin Finger",
+   "country": "Germany",
+   "prize": 720000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2012-01",
+   "city": "Bahamas",
+   "winner": "John Dibella",
+   "country": "United States",
+   "prize": 1775000,
+   "currency": "USD"
+  },
+  {
+   "season": "8",
+   "date": "2012-02",
+   "city": "Deauville",
+   "winner": "Vadim Kursevich",
+   "country": "Belarus",
+   "prize": 875000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2012-02",
+   "city": "Copenhagen",
+   "winner": "Mickey Petersen",
+   "country": "Denmark",
+   "prize": 2515000,
+   "currency": "DKK"
+  },
+  {
+   "season": "8",
+   "date": "2012-03",
+   "city": "Madrid",
+   "winner": "Frederik Jensen",
+   "country": "Denmark",
+   "prize": 495000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2012-03",
+   "city": "Campione",
+   "winner": "Jannick Wrang",
+   "country": "Denmark",
+   "prize": 640000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2012-04",
+   "city": "Berlin",
+   "winner": "Davidi Kitai",
+   "country": "Belgium",
+   "prize": 712000,
+   "currency": "EUR"
+  },
+  {
+   "season": "8",
+   "date": "2012-04",
+   "city": "Monte Carlo",
+   "winner": "Mohsin Charania",
+   "country": "United States",
+   "prize": 1350000,
+   "currency": "EUR"
+  },
+  {
+   "season": "9",
+   "date": "2012-08",
+   "city": "Barcelona",
+   "winner": "Mikalai Pobal",
+   "country": "Belarus",
+   "prize": 1007550,
+   "currency": "EUR"
+  },
+  {
+   "season": "9",
+   "date": "2012-10",
+   "city": "Sanremo",
+   "winner": "Ludovic Lacay",
+   "country": "France",
+   "prize": 744910,
+   "currency": "EUR"
+  },
+  {
+   "season": "9",
+   "date": "2012-12",
+   "city": "Prague",
+   "winner": "Ramzi Jelassi",
+   "country": "Sweden",
+   "prize": 835000,
+   "currency": "EUR"
+  },
+  {
+   "season": "9",
+   "date": "2013-01",
+   "city": "Bahamas",
+   "winner": "Dimitar Danchev",
+   "country": "Bulgaria",
+   "prize": 1859000,
+   "currency": "USD"
+  },
+  {
+   "season": "9",
+   "date": "2013-02",
+   "city": "Deauville",
+   "winner": "Remi Castaignon",
+   "country": "France",
+   "prize": 770000,
+   "currency": "EUR"
+  },
+  {
+   "season": "9",
+   "date": "2013-03",
+   "city": "London",
+   "winner": "Ruben Visser",
+   "country": "Netherlands",
+   "prize": 595000,
+   "currency": "GBP"
+  },
+  {
+   "season": "9",
+   "date": "2013-04",
+   "city": "Berlin",
+   "winner": "Daniel Pidun",
+   "country": "Germany",
+   "prize": 880000,
+   "currency": "EUR"
+  },
+  {
+   "season": "9",
+   "date": "2013-05",
+   "city": "Monte Carlo",
+   "winner": "Steve O'Dwyer",
+   "country": "United States",
+   "prize": 1224000,
+   "currency": "EUR"
+  },
+  {
+   "season": "10",
+   "date": "2013-08",
+   "city": "Barcelona",
+   "winner": "Tom Middleton",
+   "country": "United Kingdom",
+   "prize": 924000,
+   "currency": "EUR"
+  },
+  {
+   "season": "10",
+   "date": "2013-10",
+   "city": "London",
+   "winner": "Robin Ylitalo",
+   "country": "Sweden",
+   "prize": 560980,
+   "currency": "GBP"
+  },
+  {
+   "season": "10",
+   "date": "2013-12",
+   "city": "Prague",
+   "winner": "Julian Track",
+   "country": "Germany",
+   "prize": 725700,
+   "currency": "EUR"
+  },
+  {
+   "season": "10",
+   "date": "2014-01",
+   "city": "Bahamas",
+   "winner": "Dominik Pańka",
+   "country": "Poland",
+   "prize": 1423096,
+   "currency": "USD"
+  },
+  {
+   "season": "10",
+   "date": "2014-01",
+   "city": "Deauville",
+   "winner": "Sotirios Koutoupas",
+   "country": "Greece",
+   "prize": 614000,
+   "currency": "EUR"
+  },
+  {
+   "season": "10",
+   "date": "2014-03",
+   "city": "Vienna",
+   "winner": "Oleksii Khoroshenin",
+   "country": "Ukraine",
+   "prize": 578392,
+   "currency": "EUR"
+  },
+  {
+   "season": "10",
+   "date": "2014-04",
+   "city": "Sanremo",
+   "winner": "Victoria Coren Mitchell",
+   "country": "United Kingdom",
+   "prize": 476100,
+   "currency": "EUR"
+  },
+  {
+   "season": "10",
+   "date": "2014-04",
+   "city": "Monte Carlo",
+   "winner": "Antonio Buonanno",
+   "country": "Italy",
+   "prize": 1240000,
+   "currency": "EUR"
+  },
+  {
+   "season": "11",
+   "date": "2014-08",
+   "city": "Barcelona",
+   "winner": "Andre Lettau",
+   "country": "Germany",
+   "prize": 794058,
+   "currency": "EUR"
+  },
+  {
+   "season": "11",
+   "date": "2014-10",
+   "city": "London",
+   "winner": "Sebastian Pauli",
+   "country": "Germany",
+   "prize": 499700,
+   "currency": "GBP"
+  },
+  {
+   "season": "11",
+   "date": "2014-12",
+   "city": "Prague",
+   "winner": "Stephen Graner",
+   "country": "United States",
+   "prize": 969000,
+   "currency": "EUR"
+  },
+  {
+   "season": "11",
+   "date": "2015-01",
+   "city": "Bahamas",
+   "winner": "Kevin Schulz",
+   "country": "United States",
+   "prize": 1491580,
+   "currency": "USD"
+  },
+  {
+   "season": "11",
+   "date": "2015-01",
+   "city": "Deauville",
+   "winner": "Ognyan Dimov",
+   "country": "Bulgaria",
+   "prize": 543700,
+   "currency": "EUR"
+  },
+  {
+   "season": "11",
+   "date": "2015-03",
+   "city": "Malta",
+   "winner": "Jean Montury",
+   "country": "France",
+   "prize": 687400,
+   "currency": "EUR"
+  },
+  {
+   "season": "11",
+   "date": "2015-04",
+   "city": "Monte Carlo",
+   "winner": "Adrián Mateos",
+   "country": "Spain",
+   "prize": 1082000,
+   "currency": "EUR"
+  },
+  {
+   "season": "12",
+   "date": "2015-08",
+   "city": "Barcelona",
+   "winner": "John Juanda",
+   "country": "United States",
+   "prize": 1022593,
+   "currency": "EUR"
+  },
+  {
+   "season": "12",
+   "date": "2015-10",
+   "city": "Malta",
+   "winner": "Niall Farrell",
+   "country": "United Kingdom",
+   "prize": 534330,
+   "currency": "EUR"
+  },
+  {
+   "season": "12",
+   "date": "2015-12",
+   "city": "Prague",
+   "winner": "Hossein Ensan",
+   "country": "Germany",
+   "prize": 754510,
+   "currency": "EUR"
+  },
+  {
+   "season": "12",
+   "date": "2016-01",
+   "city": "Bahamas",
+   "winner": "Mike Watson",
+   "country": "Canada",
+   "prize": 728325,
+   "currency": "USD"
+  },
+  {
+   "season": "12",
+   "date": "2016-02",
+   "city": "Dublin",
+   "winner": "Dzmitry Urbanovich",
+   "country": "Poland",
+   "prize": 561900,
+   "currency": "EUR"
+  },
+  {
+   "season": "12",
+   "date": "2016-04",
+   "city": "Monte Carlo",
+   "winner": "Jan Bendík",
+   "country": "Slovakia",
+   "prize": 961800,
+   "currency": "EUR"
+  },
+  {
+   "season": "13",
+   "date": "2016-08",
+   "city": "Barcelona",
+   "winner": "Sebastian Malec",
+   "country": "Poland",
+   "prize": 1122800,
+   "currency": "EUR"
+  },
+  {
+   "season": "13",
+   "date": "2016-10",
+   "city": "Malta",
+   "winner": "Aliaksei Boika",
+   "country": "Belarus",
+   "prize": 355700,
+   "currency": "EUR"
+  },
+  {
+   "season": "13",
+   "date": "2016-12",
+   "city": "Prague",
+   "winner": "Jasper Meijer van Putten",
+   "country": "Netherlands",
+   "prize": 699300,
+   "currency": "EUR"
+  },
+  {
+   "season": "PSC",
+   "date": "2017-01",
+   "city": "Bahamas",
+   "winner": "Christian Harder",
+   "country": "United States",
+   "prize": 429664,
+   "currency": "USD",
+   "kind": "PokerStars Championship"
+  },
+  {
+   "season": "PSC",
+   "date": "2017-03",
+   "city": "Panama",
+   "winner": "Kenneth Smaron",
+   "country": "United States",
+   "prize": 293860,
+   "currency": "USD",
+   "kind": "PokerStars Championship"
+  },
+  {
+   "season": "PSC",
+   "date": "2017-04",
+   "city": "Macau",
+   "winner": "Elliot Smith",
+   "country": "Canada",
+   "prize": 2877500,
+   "currency": "HKD",
+   "kind": "PokerStars Championship"
+  },
+  {
+   "season": "PSC",
+   "date": "2017-05",
+   "city": "Monte Carlo",
+   "winner": "Raffaele Sorrentino",
+   "country": "Italy",
+   "prize": 466714,
+   "currency": "EUR",
+   "kind": "PokerStars Championship"
+  },
+  {
+   "season": "PSC",
+   "date": "2017-05",
+   "city": "Sochi",
+   "winner": "Pavel Shirshikov",
+   "country": "Russia",
+   "prize": 29100000,
+   "currency": "RUB",
+   "kind": "PokerStars Championship"
+  },
+  {
+   "season": "PSC",
+   "date": "2017-08",
+   "city": "Barcelona",
+   "winner": "Sebastian Sorensson",
+   "country": "Sweden",
+   "prize": 987043,
+   "currency": "EUR",
+   "kind": "PokerStars Championship"
+  },
+  {
+   "season": "PSC",
+   "date": "2017-12",
+   "city": "Prague",
+   "winner": "Kalidou Sow",
+   "country": "France",
+   "prize": 675000,
+   "currency": "EUR",
+   "kind": "PokerStars Championship"
+  },
+  {
+   "season": "2018",
+   "date": "2018-01",
+   "city": "Bahamas",
+   "winner": "Maria Lampropulos",
+   "country": "Argentina",
+   "prize": 1081100,
+   "currency": "USD"
+  },
+  {
+   "season": "2018",
+   "date": "2018-03",
+   "city": "Sochi",
+   "winner": "Arsenii Karmatckii",
+   "country": "Russia",
+   "prize": 27300000,
+   "currency": "RUB"
+  },
+  {
+   "season": "2018",
+   "date": "2018-04",
+   "city": "Monte Carlo",
+   "winner": "Nicolas Dumont",
+   "country": "France",
+   "prize": 712000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2018",
+   "date": "2018-08",
+   "city": "Barcelona",
+   "winner": "Piotr Nurzyński",
+   "country": "Poland",
+   "prize": 1037109,
+   "currency": "EUR"
+  },
+  {
+   "season": "2018",
+   "date": "2018-09",
+   "city": "Sochi",
+   "winner": "Wjatscheslaw Bondarzew",
+   "country": "Kazakhstan",
+   "prize": 12063300,
+   "currency": "RUB",
+   "kind": "EPT Open"
+  },
+  {
+   "season": "2018",
+   "date": "2018-12",
+   "city": "Prague",
+   "winner": "Paul Michaelis",
+   "country": "Germany",
+   "prize": 840000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2019",
+   "date": "2019-01",
+   "city": "Bahamas",
+   "winner": "David Rheem",
+   "country": "United States",
+   "prize": 1567100,
+   "currency": "USD"
+  },
+  {
+   "season": "2019",
+   "date": "2019-03",
+   "city": "Sochi",
+   "winner": "Uri Gilboa",
+   "country": "Israel",
+   "prize": 27475000,
+   "currency": "RUB"
+  },
+  {
+   "season": "2019",
+   "date": "2019-05",
+   "city": "Monte Carlo",
+   "winner": "Manig Löser",
+   "country": "Germany",
+   "prize": 603777,
+   "currency": "EUR"
+  },
+  {
+   "season": "2019",
+   "date": "2019-07",
+   "city": "Madrid",
+   "winner": "Jakub Grzegorzek",
+   "country": "Poland",
+   "prize": 176357,
+   "currency": "EUR",
+   "kind": "EPT Open"
+  },
+  {
+   "season": "2019",
+   "date": "2019-09",
+   "city": "Barcelona",
+   "winner": "Simon Brändström",
+   "country": "Sweden",
+   "prize": 1290166,
+   "currency": "EUR"
+  },
+  {
+   "season": "2019",
+   "date": "2019-10",
+   "city": "Sochi",
+   "winner": "Yi Ye",
+   "country": "China",
+   "prize": 19306000,
+   "currency": "RUB",
+   "kind": "EPT Open"
+  },
+  {
+   "season": "2019",
+   "date": "2019-12",
+   "city": "Prague",
+   "winner": "Mikalai Pobal",
+   "country": "Belarus",
+   "prize": 1005600,
+   "currency": "EUR"
+  },
+  {
+   "season": "2020–21",
+   "date": "2020-10",
+   "city": "Sochi",
+   "winner": "Ruslan Bogdanov",
+   "country": "Russia",
+   "prize": 15984500,
+   "currency": "RUB"
+  },
+  {
+   "season": "2020–21",
+   "date": "2020-11",
+   "city": "Online",
+   "winner": "Anton Bergström",
+   "country": "Sweden",
+   "prize": 1019082,
+   "currency": "USD",
+   "kind": "Online"
+  },
+  {
+   "season": "2020–21",
+   "date": "2021-03",
+   "city": "Sochi",
+   "winner": "Artur Martirosian",
+   "country": "Russia",
+   "prize": 24633000,
+   "currency": "RUB"
+  },
+  {
+   "season": "2020–21",
+   "date": "2021-10",
+   "city": "Sochi",
+   "winner": "Evgeniy Starinkov",
+   "country": "Russia",
+   "prize": 16029300,
+   "currency": "RUB",
+   "kind": "EPT Open"
+  },
+  {
+   "season": "2020–21",
+   "date": "2021-12",
+   "city": "Online",
+   "winner": "Anton Bergström",
+   "country": "Sweden",
+   "prize": 363640,
+   "currency": "USD",
+   "kind": "Online"
+  },
+  {
+   "season": "2022",
+   "date": "2022-03",
+   "city": "Prague",
+   "winner": "Grzegorz Główny",
+   "country": "Poland",
+   "prize": 692252,
+   "currency": "EUR"
+  },
+  {
+   "season": "2022",
+   "date": "2022-05",
+   "city": "Monte Carlo",
+   "winner": "Marcelo Simões",
+   "country": "Brazil",
+   "prize": 939840,
+   "currency": "EUR"
+  },
+  {
+   "season": "2022",
+   "date": "2022-08",
+   "city": "Barcelona",
+   "winner": "Giuliano Bendinelli",
+   "country": "Italy",
+   "prize": 1491133,
+   "currency": "EUR"
+  },
+  {
+   "season": "2022",
+   "date": "2022-10",
+   "city": "London",
+   "winner": "Ian Hamilton",
+   "country": "United Kingdom",
+   "prize": 664400,
+   "currency": "GBP"
+  },
+  {
+   "season": "2022",
+   "date": "2022-12",
+   "city": "Prague",
+   "winner": "Jordan Saccucci",
+   "country": "Canada",
+   "prize": 913250,
+   "currency": "EUR"
+  },
+  {
+   "season": "2023",
+   "date": "2023-01",
+   "city": "Bahamas",
+   "winner": "Michel Dattani",
+   "country": "Portugal",
+   "prize": 1316963,
+   "currency": "USD"
+  },
+  {
+   "season": "2023",
+   "date": "2023-02",
+   "city": "Paris",
+   "winner": "Razvan Belea",
+   "country": "Romania",
+   "prize": 1170000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2023",
+   "date": "2023-05",
+   "city": "Monte Carlo",
+   "winner": "Mike Watson",
+   "country": "Canada",
+   "prize": 749425,
+   "currency": "EUR"
+  },
+  {
+   "season": "2023",
+   "date": "2023-09",
+   "city": "Barcelona",
+   "winner": "Simon Wiciak",
+   "country": "France",
+   "prize": 1134375,
+   "currency": "EUR"
+  },
+  {
+   "season": "2023",
+   "date": "2023-10",
+   "city": "Cyprus",
+   "winner": "Gilles Simon",
+   "country": "Netherlands",
+   "prize": 1042000,
+   "currency": "USD"
+  },
+  {
+   "season": "2023",
+   "date": "2023-12",
+   "city": "Prague",
+   "winner": "Padraig O'Neill",
+   "country": "Ireland",
+   "prize": 1030000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2024",
+   "date": "2024-02",
+   "city": "Paris",
+   "winner": "Barny Boatman",
+   "country": "United Kingdom",
+   "prize": 1287800,
+   "currency": "EUR"
+  },
+  {
+   "season": "2024",
+   "date": "2024-05",
+   "city": "Monte Carlo",
+   "winner": "Derk van Luijk",
+   "country": "Netherlands",
+   "prize": 1000000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2024",
+   "date": "2024-09",
+   "city": "Barcelona",
+   "winner": "Stephen Song",
+   "country": "United States",
+   "prize": 1290386,
+   "currency": "EUR"
+  },
+  {
+   "season": "2024",
+   "date": "2024-10",
+   "city": "Cyprus",
+   "winner": "Oliver Weis",
+   "country": "Germany",
+   "prize": 1030000,
+   "currency": "USD"
+  },
+  {
+   "season": "2024",
+   "date": "2024-12",
+   "city": "Prague",
+   "winner": "Pedro Marques",
+   "country": "Portugal",
+   "prize": 963450,
+   "currency": "EUR"
+  },
+  {
+   "season": "2025",
+   "date": "2025-05",
+   "city": "Monte Carlo",
+   "winner": "Aleksandr Shevliakov",
+   "country": "Russia",
+   "prize": 1000000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2025",
+   "date": "2025-08",
+   "city": "Barcelona",
+   "winner": "Thomas Eychenne",
+   "country": "France",
+   "prize": 1217175,
+   "currency": "EUR"
+  },
+  {
+   "season": "2025",
+   "date": "2025-10",
+   "city": "Malta",
+   "winner": "Tomasz Brzeziński",
+   "country": "Poland",
+   "prize": 631592,
+   "currency": "EUR"
+  },
+  {
+   "season": "2025",
+   "date": "2025-12",
+   "city": "Prague",
+   "winner": "Matan Krakow",
+   "country": "Israel",
+   "prize": 778255,
+   "currency": "EUR"
+  },
+  {
+   "season": "2026",
+   "date": "2026-03",
+   "city": "Paris",
+   "winner": "Jorge Abreu",
+   "country": "Portugal",
+   "prize": 1148600,
+   "currency": "EUR"
+  },
+  {
+   "season": "2026",
+   "date": "2026-05",
+   "city": "Monte Carlo",
+   "winner": "Roman Stoica",
+   "country": "Russia",
+   "prize": 825000,
+   "currency": "EUR"
+  },
+  {
+   "season": "2026",
+   "date": "2026-08",
+   "city": "Barcelona",
+   "winner": "Manuel Ferrari",
+   "country": "Italy",
+   "prize": 1002488,
+   "currency": "EUR"
+  }
+ ],
+ "wptChampionship": [
+  {
+   "year": 2003,
+   "venue": "Bellagio",
+   "entrants": 111,
+   "winner": "Alan Goehring",
+   "country": "United States",
+   "prize": 1011886
+  },
+  {
+   "year": 2004,
+   "venue": "Bellagio",
+   "entrants": 343,
+   "winner": "Martin de Knijff",
+   "country": "Sweden",
+   "prize": 2728356
+  },
+  {
+   "year": 2005,
+   "venue": "Bellagio",
+   "entrants": 453,
+   "winner": "Tuan Le",
+   "country": "United States",
+   "prize": 2856150
+  },
+  {
+   "year": 2006,
+   "venue": "Bellagio",
+   "entrants": 605,
+   "winner": "Joe Bartholdi",
+   "country": "United States",
+   "prize": 3760165
+  },
+  {
+   "year": 2007,
+   "venue": "Bellagio",
+   "entrants": 639,
+   "winner": "Carlos Mortensen",
+   "country": "Spain",
+   "prize": 3970415
+  },
+  {
+   "year": 2008,
+   "venue": "Bellagio",
+   "entrants": 545,
+   "winner": "David Chiu",
+   "country": "United States",
+   "prize": 3389140
+  },
+  {
+   "year": 2009,
+   "venue": "Bellagio",
+   "entrants": 338,
+   "winner": "Yevgeniy Timoshenko",
+   "country": "Ukraine",
+   "prize": 2143655
+  },
+  {
+   "year": 2010,
+   "venue": "Bellagio",
+   "entrants": 195,
+   "winner": "David Williams",
+   "country": "United States",
+   "prize": 1530537
+  },
+  {
+   "year": 2011,
+   "venue": "Bellagio",
+   "entrants": 220,
+   "winner": "Scott Seiver",
+   "country": "United States",
+   "prize": 1618344
+  },
+  {
+   "year": 2012,
+   "venue": "Bellagio",
+   "entrants": 152,
+   "winner": "Marvin Rettenmaier",
+   "country": "Germany",
+   "prize": 1196858
+  },
+  {
+   "year": 2013,
+   "venue": "Bellagio",
+   "entrants": 146,
+   "winner": "David Rheem",
+   "country": "United States",
+   "prize": 1150297
+  },
+  {
+   "year": 2014,
+   "venue": "Borgata",
+   "entrants": 328,
+   "winner": "Keven Stammen",
+   "country": "United States",
+   "prize": 1350000
+  },
+  {
+   "year": 2015,
+   "venue": "Borgata",
+   "entrants": 239,
+   "winner": "Asher Conniff",
+   "country": "United States",
+   "prize": 973683
+  },
+  {
+   "year": 2022,
+   "venue": "Wynn",
+   "entrants": 2960,
+   "winner": "Eliot Hudon",
+   "country": "Canada",
+   "prize": 4136000
+  },
+  {
+   "year": 2023,
+   "venue": "Wynn",
+   "entrants": 3835,
+   "winner": "Daniel Sepiol",
+   "country": "United States",
+   "prize": 5678000
+  },
+  {
+   "year": 2024,
+   "venue": "Wynn",
+   "entrants": 2392,
+   "winner": "Scott Stewart",
+   "country": "United States",
+   "prize": 2563900
+  },
+  {
+   "year": 2025,
+   "venue": "Wynn",
+   "entrants": 1865,
+   "winner": "Schuyler Thornton",
+   "country": "United States",
+   "prize": 2258856
+  }
+ ],
+ "wptTitles": [
+  {
+   "player": "Darren Elias",
+   "country": "United States",
+   "titles": 4,
+   "events": "Borgata Poker Open 2014, Caribbean 2014, Fallsview 2017, Bobby Baldwin Classic 2018"
+  },
+  {
+   "player": "Brian Altman",
+   "country": "United States",
+   "titles": 4,
+   "events": "Lucky Hearts 2015 and 2019, Seminole Hard Rock Tampa 2021, WPT Championship on ClubWPT Gold (online)"
+  },
+  {
+   "player": "Gus Hansen",
+   "country": "Denmark",
+   "titles": 3,
+   "events": "Five Diamond 2002, L.A. Poker Classic 2003, PokerStars Caribbean Adventure 2004"
+  },
+  {
+   "player": "Carlos Mortensen",
+   "country": "Spain",
+   "titles": 3,
+   "events": "Festa al Lago 2004, WPT World Championship 2007, Hollywood Poker Open 2010"
+  },
+  {
+   "player": "Anthony Zinno",
+   "country": "United States",
+   "titles": 3,
+   "events": "Borgata Poker Open 2013, Fallsview 2015, L.A. Poker Classic 2015"
+  },
+  {
+   "player": "David \"Chino\" Rheem",
+   "country": "United States",
+   "titles": 3,
+   "events": "Five Diamond 2008, WPT World Championship 2013, Seminole Hard Rock Finale 2016"
+  },
+  {
+   "player": "Eric Afriat",
+   "country": "Canada",
+   "titles": 3,
+   "events": "Seminole Hard Rock Showdown 2014, Borgata Winter Poker Open 2018, Fallsview 2019"
+  }
+ ],
+ "wptPOY": [
+  {
+   "season": "2002–03",
+   "player": "Howard Lederer"
+  },
+  {
+   "season": "2003–04",
+   "player": "Erick Lindgren"
+  },
+  {
+   "season": "2004–05",
+   "player": "Daniel Negreanu"
+  },
+  {
+   "season": "2005–06",
+   "player": "Gavin Smith"
+  },
+  {
+   "season": "2006–07",
+   "player": "J. C. Tran"
+  },
+  {
+   "season": "2007–08",
+   "player": "Jonathan Little"
+  },
+  {
+   "season": "2008–09",
+   "player": "Bertrand Grospellier"
+  },
+  {
+   "season": "2009–10",
+   "player": "Faraz Jaka"
+  },
+  {
+   "season": "2010–11",
+   "player": "Andy Frankenberger"
+  },
+  {
+   "season": "2011–12",
+   "player": "Joe Serock"
+  },
+  {
+   "season": "2012–13",
+   "player": "Matthew Salsberg"
+  },
+  {
+   "season": "2013–14",
+   "player": "Mukul Pahuja"
+  },
+  {
+   "season": "2014–15",
+   "player": "Anthony Zinno"
+  },
+  {
+   "season": "2015–16",
+   "player": "Mike Shariati"
+  },
+  {
+   "season": "2016–17",
+   "player": "Benjamin Zamani"
+  },
+  {
+   "season": "2017–18",
+   "player": "Art Papazyan"
+  },
+  {
+   "season": "2018–19",
+   "player": "Erkut Yilmaz"
+  },
+  {
+   "season": "2019–21",
+   "player": "Brian Altman"
+  },
+  {
+   "season": "2021",
+   "player": "Jake Ferro"
+  },
+  {
+   "season": "2022",
+   "player": "Chad Eveslage"
+  },
+  {
+   "season": "2023",
+   "player": "Bin Weng"
+  },
+  {
+   "season": "2024",
+   "player": "Yunkyu Song"
+  },
+  {
+   "season": "2025",
+   "player": "Harvey Castro"
+  }
+ ],
+ "tripleCrown": [
+  {
+   "player": "Gavin Griffin",
+   "country": "United States"
+  },
+  {
+   "player": "Roland De Wolfe",
+   "country": "United Kingdom"
+  },
+  {
+   "player": "Jake Cody",
+   "country": "United Kingdom",
+   "note": "Fastest: 1 year, 4 months"
+  },
+  {
+   "player": "Bertrand Grospellier",
+   "country": "France"
+  },
+  {
+   "player": "Davidi Kitai",
+   "country": "Belgium"
+  },
+  {
+   "player": "Mohsin Charania",
+   "country": "United States"
+  },
+  {
+   "player": "Harrison Gimbel",
+   "country": "United States"
+  },
+  {
+   "player": "Niall Farrell",
+   "country": "United Kingdom"
+  },
+  {
+   "player": "Roberto Romanello",
+   "country": "United Kingdom"
+  },
+  {
+   "player": "Mike Watson",
+   "country": "Canada"
+  }
+ ],
+ "sources": [
+  {
+   "label": "WSOP Main Event champions",
+   "url": "https://en.wikipedia.org/wiki/List_of_World_Series_of_Poker_Main_Event_champions"
+  },
+  {
+   "label": "WSOP multiple bracelet winners (as of 29 Sep 2026)",
+   "url": "https://en.wikipedia.org/wiki/World_Series_of_Poker_multiple_bracelet_winners"
+  },
+  {
+   "label": "World Series of Poker Europe",
+   "url": "https://en.wikipedia.org/wiki/World_Series_of_Poker_Europe"
+  },
+  {
+   "label": "2026 WSOP Europe Main Event (PokerNews)",
+   "url": "https://www.pokernews.com/news/2026/04/marius-kudzmanas-wins-wsop-europe-main-event-51022.htm"
+  },
+  {
+   "label": "European Poker Tour",
+   "url": "https://en.wikipedia.org/wiki/European_Poker_Tour"
+  },
+  {
+   "label": "World Poker Tour",
+   "url": "https://en.wikipedia.org/wiki/World_Poker_Tour"
+  },
+  {
+   "label": "WPT Champions Club",
+   "url": "https://en.wikipedia.org/wiki/World_Poker_Tour_Champions_Club"
+  },
+  {
+   "label": "Triple Crown (poker)",
+   "url": "https://en.wikipedia.org/wiki/Triple_Crown_(poker)"
+  }
+ ]
+}

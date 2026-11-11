@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tournament History · Hold'em Lab</title>
+  <meta name="description" content="Poker tournament history: every WSOP Main Event since 1970 with its field and prize, the most WSOP bracelets, WSOP Europe, European Poker Tour and World Poker Tour champions, and the Triple Crown.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3a5f'/%3E%3Cpath d='M32 14c-6 9-16 14-16 23a8 8 0 0 0 14 5l-3 8h10l-3-8a8 8 0 0 0 14-5c0-9-10-14-16-23Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/theme.css">
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Hold'em Lab</p>
+        <h1>Tournament history</h1>
+        <p class="lede">The records of the major tours: every World Series of Poker Main Event since 1970, the most decorated bracelet winners, and the main event champions of WSOP Europe, the European Poker Tour and the World Poker Tour. Every table sorts by its headers.</p>
+        <p class="updated" id="updated"></p>
+        <nav class="jump" aria-label="Sections">
+          <a href="#compare">Comparison</a><a href="#wsop">WSOP Main Event</a><a href="#bracelets">Bracelets</a><a href="#wsope">WSOP Europe</a><a href="#ept">EPT</a><a href="#wpt">WPT</a><a href="#triple">Triple Crown</a>
+        </nav>
+      </header>
+
+      <section class="block">
+        <div class="tiles" id="tiles"></div>
+      </section>
+
+      <section class="block" id="compare">
+        <h2>The tours side by side</h2>
+        <p class="sub">Each tour's main event over the years in this database. Prizes are in the currency they were paid in.</p>
+        <div class="card table-scroll"><table class="data" id="compare-table"></table></div>
+        <p class="note">EPT field sizes are not in this database; its record (2,294 entries, Barcelona 2022) is from PokerFuse. The WPT row covers the season-ending World Championship only.</p>
+      </section>
+
+      <section class="block" id="wsop">
+        <h2>WSOP Main Event, 1970 to 2026</h2>
+        <p class="sub">The $10,000 No-Limit Hold'em World Championship. The field grew from 7 players to more than 10,000 after Chris Moneymaker, an amateur who qualified online, won in 2003.</p>
+        <div class="card">
+          <div class="controls">
+            <span class="control">Show <span id="me-metric"></span></span>
+            <span class="control">Scale <span id="me-scale"></span></span>
+          </div>
+          <div id="me-chart"></div>
+        </div>
+        <div class="grid-2" style="margin-top:16px">
+          <div class="card">
+            <h3>Champions by country</h3>
+            <div id="me-countries"></div>
+          </div>
+          <div class="card">
+            <h3>Won it more than once</h3>
+            <div class="table-scroll"><table class="data" id="me-multi"></table></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <div class="controls"><label class="field search">Find a player, country or year<input type="text" id="me-search" placeholder="e.g. Ungar, Germany, 2006"></label></div>
+          <div class="table-scroll"><table class="data" id="me-table"></table></div>
+          <p class="note" id="me-notes"></p>
+        </div>
+      </section>
+
+      <section class="block" id="bracelets">
+        <h2>Most WSOP bracelets</h2>
+        <p class="sub">A bracelet goes to the winner of every official WSOP event, in Las Vegas, online, or at WSOP Europe and the other international series. Every player with six or more.</p>
+        <div class="card">
+          <div id="br-bars"></div>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <div class="table-scroll"><table class="data" id="br-table"></table></div>
+          <p class="note">"Other" counts bracelets won at WSOP Europe, WSOP Asia Pacific and WSOP Paradise. Online events since 2020 are counted as listed by Wikipedia, which had not finished reviewing the 2025 and 2026 online events.</p>
+        </div>
+      </section>
+
+      <section class="block" id="wsope">
+        <h2>WSOP Europe Main Event</h2>
+        <p class="sub">Held in London from 2007, then Cannes, Enghien-les-Bains, Berlin, King's Casino in Rozvadov from 2017, and Prague since 2026. It was not played in 2014, 2016 or 2020.</p>
+        <div class="card"><div id="wsope-chart"></div></div>
+        <div class="card table-scroll" style="margin-top:16px"><table class="data" id="wsope-table"></table></div>
+      </section>
+
+      <section class="block" id="ept">
+        <h2>European Poker Tour main events</h2>
+        <p class="sub">PokerStars' tour, running since Barcelona in September 2004. In 2017 it was renamed the PokerStars Championship for one season; it includes the PokerStars Caribbean Adventure in the Bahamas, two online main events, and the lower buy-in EPT Open main events.</p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Main event titles by country</h3>
+            <div id="ept-countries"></div>
+          </div>
+          <div class="card">
+            <h3>Titles by stop</h3>
+            <div id="ept-cities"></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <div class="controls">
+            <label class="field search">Find a player, country or city<input type="text" id="ept-search" placeholder="e.g. Coren, Spain, Barcelona"></label>
+            <span class="control">Stop <select id="ept-city"></select></span>
+          </div>
+          <div class="table-scroll"><table class="data" id="ept-table"></table></div>
+          <p class="note" id="ept-multi"></p>
+        </div>
+      </section>
+
+      <section class="block" id="wpt">
+        <h2>World Poker Tour</h2>
+        <p class="sub">Founded in 2002, the tour that brought hole-card cameras to television. Its season ends with the World Championship, held at Bellagio until 2013 and at Wynn Las Vegas since the $10,400 open event returned in 2022.</p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Most main tour titles</h3>
+            <div class="table-scroll"><table class="data" id="wpt-titles"></table></div>
+          </div>
+          <div class="card">
+            <h3>Player of the Year</h3>
+            <div class="table-scroll"><table class="data" id="wpt-poy"></table></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <h3>WPT World Championship</h3>
+          <div id="wpt-chart"></div>
+          <div class="table-scroll" style="margin-top:12px"><table class="data" id="wpt-champs"></table></div>
+          <p class="note">From 2016 to 2021 the season ended with the invitation-only Tournament of Champions instead, which is left out.</p>
+        </div>
+      </section>
+
+      <section class="block" id="triple">
+        <h2>The Triple Crown</h2>
+        <p class="sub">Ten players have won a WSOP bracelet, a WPT main event and an EPT main event, in order of completion.</p>
+        <div class="card table-scroll"><table class="data" id="triple-table"></table></div>
+        <p class="note">List as of December 2024.</p>
+      </section>
+
+      <section class="block">
+        <div id="sources"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../assets/engine.js"></script>
+  <script src="../assets/ui.js"></script>
+  <script src="../assets/records.js"></script>
+  <script src="../assets/pages/history.js"></script>
+</body>
+</html>
